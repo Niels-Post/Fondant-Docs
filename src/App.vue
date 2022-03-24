@@ -3,12 +3,21 @@
   <SideBar title="Fondant">
     <SideBarLink link="/">Start</SideBarLink>
 
+
+
     <SideBarGroup title="1. Installatie" link="/Installatie">
-      <SideBarLink link="/Installatie/1_CubeIDE">1. STM32CubeIDE</SideBarLink>
-      <SideBarLink link="/Installatie/2_CLion">2. CLion</SideBarLink>
-      <SideBarLink link="/Installatie/3_OpenOCD">3. OpenOCD</SideBarLink>
-      <SideBarLink link="/Installatie/4_ARM">4. ARM</SideBarLink>
+      <SideBarLink link="/Installatie#CubeIDE">1. STM32CubeIDE</SideBarLink>
+      <SideBarLink link="/Installatie#CLion">2. CLion</SideBarLink>
+      <SideBarLink link="/Installatie#OpenOCD">3. OpenOCD</SideBarLink>
+      <SideBarLink link="/Installatie#ARM">4. ARM</SideBarLink>
     </SideBarGroup>
+
+    <SideBarGroup title="2. De Microcontroller" link="/DeMicrocontroller">
+      <SideBarLink link="/DeMicrocontroller#Microprocessors">1. Microprocessors</SideBarLink>
+      <SideBarLink link="/DeMicrocontroller#MicroProcessorsVsMicroControllers">2. Microprocessors vs Microcontrollers</SideBarLink>
+      <SideBarLink link="/DeMicrocontroller#EmbeddedSystemen">3. Embedded Systemen</SideBarLink>
+    </SideBarGroup>
+
 
 
 

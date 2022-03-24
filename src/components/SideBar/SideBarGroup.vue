@@ -1,12 +1,13 @@
 <template>
 
   <li class="nav-item">
-    <a href="#" class="nav-link text-muted" @click="toggleVisible()"><i class="bi bi-chevron-right sidebargroup-chevron" :class="{active: children_visible}" ></i> {{title}}</a>
+    <router-link id="" v-if="link" :to="link" class="nav-link text-light"  :class="{active: is_active}"  @click.self="setVisible()"><span @click.prevent="toggleVisible()"><i class="bi bi-chevron-right sidebargroup-chevron me-2" :class="{active: children_visible}" ></i></span>{{title}}</router-link>
+
+    <a href="#" v-if="!link" class="nav-link text-muted" @click="toggleVisible()"> {{title}}</a>
 
     <transition name="slidefade">
       <ul v-if="children_visible" class="nav nav-pills flex-column mb-auto ms-5">
         <slot></slot>
-
       </ul>
     </transition>
 
@@ -24,7 +25,13 @@ export default {
 
   methods: {
     toggleVisible() {
+      console.log("Toggle")
+
       this.children_visible = !this.children_visible;
+    },
+    setVisible() {
+      console.log("Set")
+        this.children_visible = true;
     }
   },
   mounted() {
@@ -32,9 +39,17 @@ export default {
       this.children_visible = this.$router.currentRoute.value.path.startsWith(this.$props.link)
     }.bind(this))
   },
+  computed: {
+    is_active() {
+      return (this.$route.path + this.$route.hash) === this.link;
+    }
+  },
   props: {
     title: String,
-    link: String
+    link: {
+      type:String,
+      default:''
+    }
   }
 }
 </script>

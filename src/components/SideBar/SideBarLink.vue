@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="link" class="nav-link text-light" active-class="active"><slot></slot></router-link>
+  <router-link :to="link" class="nav-link text-light" :class="{active: is_active}" ><slot></slot></router-link>
 
 </template>
 
@@ -9,6 +9,11 @@ export default {
   props: {
     link: String,
     title: String
+  },
+  computed: {
+    is_active() {
+      return (this.$route.path + this.$route.hash) === this.link;
+    }
   }
 }
 </script>
