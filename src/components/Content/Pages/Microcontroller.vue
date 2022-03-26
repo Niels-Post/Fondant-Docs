@@ -1,6 +1,6 @@
 <template>
   <div class="col-8">
-    <h1>De Microcontroller</h1>
+    <h1>Wat is een microcontroller?</h1>
     <p>
       Tijdens de cursus ben je waarschijnlijk al een aantal keren tegen begrippen zoals microcontroller en embedded
       aangelopen,
@@ -11,6 +11,7 @@
 
     <hr>
 
+    <!-- MPU's -->
     <div>
       <h2 id="Microprocessors">Microprocessors</h2>
       <p>
@@ -53,6 +54,7 @@
 
     <hr>
 
+    <!-- MPU vs MCU -->
     <div>
       <h2 id="MicroProcessorsVsMicroControllers">Microprocessors vs. Microcontrollers</h2>
 
@@ -148,6 +150,7 @@
 
     <hr>
 
+    <!-- Embedded Systemen -->
     <div>
       <h2 id="EmbeddedSystemen">Embedded systemen</h2>
       <p>
@@ -183,9 +186,6 @@
         <li>Het systeem is ontworpen voor een specifiek doeleinde (Een TV-besturingssysteem)</li>
       </ol>
     </div>
-
-
-
 
 
   </div>

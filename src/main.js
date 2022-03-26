@@ -7,8 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {createWebHistory, createRouter} from "vue-router";
 import ContentStart from "@/components/Content/ContentStart";
-import DeMicrocontroller from "@/components/Content/DeMicrocontroller/DeMicrocontroller";
-import VereistenInstalleren from "@/components/Content/Installatie/VereistenInstalleren";
+import DeMicrocontroller from "@/components/Content/Pages/Microcontroller";
+import VereistenInstalleren from "@/components/Content/Pages/Installatie";
+import MicrocontrollerOnderdelen from "@/components/Content/Pages/MicrocontrollerOnderdelen";
 
 const routes = [
     {
@@ -25,18 +26,25 @@ const routes = [
         path: "/DeMicrocontroller",
         name: "De MicroController",
         component: DeMicrocontroller
+    },
+    {
+        path: "/MicrocontrollerOnderdelen",
+        name: "Onderdelen van een Microcontroller",
+        component: MicrocontrollerOnderdelen
     }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior(to) {
         if (to.hash !== "") {
             document.getElementById(to.hash.substring(1)).scrollIntoView({ behavior: "smooth" });
             return false
+        } else {
+            document.getElementById("content-container").scrollTo({top: 0, behavior: 'smooth'});
+            return false;
         }
-        return savedPosition
     },
 })
 

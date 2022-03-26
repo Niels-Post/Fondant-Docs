@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="link" class="nav-link text-light" :class="{active: is_active}" ><slot></slot></router-link>
+  <router-link :to="link" class="counter_before nav-link text-light" :class="{active: is_active}" ><slot></slot></router-link>
 
 </template>
 

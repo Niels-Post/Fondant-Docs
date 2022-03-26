@@ -5,25 +5,31 @@
 
 
 
-    <SideBarGroup title="1. Installatie" link="/Installatie">
-      <SideBarLink link="/Installatie#CubeIDE">1. STM32CubeIDE</SideBarLink>
-      <SideBarLink link="/Installatie#CLion">2. CLion</SideBarLink>
-      <SideBarLink link="/Installatie#OpenOCD">3. OpenOCD</SideBarLink>
-      <SideBarLink link="/Installatie#ARM">4. ARM</SideBarLink>
+    <SideBarGroup title="Installatie" link="/Installatie">
+      <SideBarLink link="/Installatie#CubeIDE">STM32CubeIDE</SideBarLink>
+      <SideBarLink link="/Installatie#CLion">CLion</SideBarLink>
+      <SideBarLink link="/Installatie#OpenOCD">OpenOCD</SideBarLink>
+      <SideBarLink link="/Installatie#ARM">ARM</SideBarLink>
     </SideBarGroup>
 
-    <SideBarGroup title="2. De Microcontroller" link="/DeMicrocontroller">
-      <SideBarLink link="/DeMicrocontroller#Microprocessors">1. Microprocessors</SideBarLink>
-      <SideBarLink link="/DeMicrocontroller#MicroProcessorsVsMicroControllers">2. Microprocessors vs Microcontrollers</SideBarLink>
-      <SideBarLink link="/DeMicrocontroller#EmbeddedSystemen">3. Embedded Systemen</SideBarLink>
+    <SideBarGroup title="Wat is een microcontroller" link="/DeMicrocontroller">
+      <SideBarLink link="/DeMicrocontroller#Microprocessors">Microprocessors</SideBarLink>
+      <SideBarLink link="/DeMicrocontroller#MicroProcessorsVsMicroControllers">Microprocessors vs Microcontrollers</SideBarLink>
+      <SideBarLink link="/DeMicrocontroller#EmbeddedSystemen">Embedded Systemen</SideBarLink>
     </SideBarGroup>
+
+    <SideBarGroup title="Onderdelen van een microcontroller" link="/MicrocontrollerOnderdelen">
+      <SideBarLink link="/MicrocontrollerOnderdelen#InformatieVinden">Informatie vinden</SideBarLink>
+    </SideBarGroup>
+
+
 
 
 
 
   </SideBar>
 
-  <div class="container-fluid ms-1 p-4 content-container " style="background: #e0e4e8; height: 100vh; overflow: auto">
+  <div class="container-fluid ms-1 p-4 content-container" id="content-container" style="background: #e0e4e8; height: 100vh; overflow: auto">
     <router-view></router-view>
 
   </div>
@@ -52,7 +58,7 @@ export default {
     height: 100vh;
   }
 
-  .emph {
+  .emph, .emph_link {
     display: inline;
     background: #a2a2a2;
     color: #e7e7e7;
@@ -61,6 +67,24 @@ export default {
     border-radius: 5px;
     font-size: 0.9em;
   }
+
+  .emph_link {
+    text-decoration: none;
+    color: #292d41;
+    font-weight: bold;
+  }
+
+  .emph_link:hover {
+    color: #2f2f2f;
+  }
+  .fix {
+    display: inline;
+    background: #d58888;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
 
 
 </style>

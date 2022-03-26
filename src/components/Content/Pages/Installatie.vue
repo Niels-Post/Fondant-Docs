@@ -5,7 +5,7 @@
       Er komt nogal wat kijken bij het werken met microcontrollers. Niet alleen heb je een speciale cross-compiler nodig
       voor je C++ code, een programma om de code te “uploaden” naar je microcontroller, en om je programma tijdens het
       uitvoeren te debuggen. In dit hoofdstuk installeren we alle software die je nodig hebt om te ontwikkelen voor het
-      STM32 platform. Dit omvat de platform-specifieke tools voor ontwikkeling, maar ook algemenere software die je zal
+      <DefRef n="STM32"/> platform. Dit omvat de platform-specifieke tools voor ontwikkeling, maar ook algemenere software die je zal
       helpen met het debuggen van je applicatie.
     </p>
 
@@ -24,12 +24,13 @@
 
     <!-- STM32 Cube IDE -->
     <div>
-      <h2 id="CubeIDE">STM32 Cube IDE <a href="https://www.st.com/en/development-tools/stm32cubeide.html"
-                                         class="small text-muted text-decoration-none">[st.com]</a></h2>
+
+      <h2 id="CubeIDE">STM32 Cube IDE
+        <ExtLink to="https://www.st.com/en/development-tools/stm32cubeide.html" remove-path small/></h2>
 
       <p>
-        De CubeIDE gebruik je om de parameters van de STM32 in te stellen. In deze IDE kan je informatie vinden over de
-        meeste STM32 microcontrollers.
+        De CubeIDE gebruik je om de parameters van de <DefRef n="STM32"/> in te stellen. In deze <DefRef n="IDE"/> kan je informatie vinden over de
+        meeste <DefRef n="STM32"/> microcontrollers.
         Hierin kan je aangeven op welke manier je de processor gaat gebruiken; Welke pins gebruik je voor welke doelen,
         welke peripherals wil je aansturen,
         hoe moet de klok ingesteld worden, en nog veel meer!
@@ -44,12 +45,19 @@
       </p>
 
 
-      Installatie
-      Download: https://www.st.com/en/development-tools/stm32cubeide.html
-      Voordat je mag downloaden moet je van ST eerst een account aanmaken of je email invullen. De setup verloopt niet,
-      dus
-      deze kan je op meerdere apparaten gebruiken.
-      Onderstaand de installatiestappen.
+      <h4>Installatie</h4>
+      <a href="https://www.st.com/en/development-tools/stm32cubeide.html" class="text-muted font-monospace text-decoration-none">[st.com/en/development-tools/stm32cubeide.html]</a>
+
+
+      <div class="alert alert-warning">
+        Voordat je mag downloaden moet je van ST eerst een account aanmaken of je email invullen.
+        In het tweede geval krijg je een link toegestuurd. Deze setup verloopt niet,
+        dus deze kan je op meerdere apparaten gebruiken. Onderstaand de installatiestappen.
+      </div>
+      <p>
+
+      </p>
+
 
     </div>
 
@@ -57,7 +65,7 @@
 
     <!-- CLion -->
     <div>
-      <h2 id="CLion">CLion <a href="https://www.jetbrains.com/clion/" class="small text-muted text-decoration-none">[jetbrains.com]</a>
+      <h2 id="CLion">CLion <ExtLink to="https://www.jetbrains.com/clion/" remove-path small/>
       </h2>
 
       <img class="float-end"
@@ -81,16 +89,18 @@
         Andere IDE’s kunnen ook werken met projecten van Cube, maar misschien zijn hier meer instelstappen voor nodig.
       </p>
 
-      <div class="fs-4">Installatiestappen</div>
-      <div class="fs-5">Educatielicentie</div>
-      Voor PyCharm kan je gebruik maken van de Community Edition, die gratis is. Zo’n editie is er helaas voor CLion
-      niet.
-      Gelukkig kan je als student gratis gebruik maken van alle IDE’s uit deze familie. Ga hiervoor naar
-      https://www.jetbrains.com/shop/eform/students.
-      Hier kan je een account aanmaken en je aanmelden met je HU-email.
+      <h3>Installatie</h3>
 
-      <div class="fs-5">Installlatie</div>
-      Ga hierna naar https://www.jetbrains.com/clion/ om CLion te downloaden.
+
+      <h4>Installeren</h4>
+      <ExtLink to="https://www.jetbrains.com/clion"/>
+      <div class="alert alert-warning">
+        Voor PyCharm kan je gebruik maken van de Community Edition, die gratis is. Zo’n editie is er helaas voor CLion
+        niet.
+        Gelukkig kan je als student gratis gebruik maken van alle IDE’s uit deze familie. Ga hiervoor naar
+        <ExtLink to="https://www.jetbrains.com/shop/eform/students"/>
+        Hier kan je een account aanmaken en je aanmelden met je HU-email.
+      </div>
 
     </div>
 
@@ -98,8 +108,7 @@
 
     <!-- OpenOCD -->
     <div>
-      <h2 id="OpenOCD">OpenOCD <a href="https://openocd.org"
-                                  class="small text-muted text-decoration-none">[openocd.org]</a></h2>
+      <h2 id="OpenOCD">OpenOCD <ExtLink to="https://openocd.org" small remove-path/></h2>
       <p>
         OpenOCD is een open-source toolchain die je kan gebruiken om code te uploaden naar microcontrollers, en om
         programma’s op microcontrollers te debuggen.
@@ -114,7 +123,7 @@
       </h3>
 
       <p>
-        OpenOCD is te downloaden via github. https://github.com/openocd-org/openocd/releases.
+        <ExtLink to="https://github.com/openocd-org/openocd/releases"/>
       </p>
     </div>
 
@@ -122,9 +131,8 @@
 
     <!-- Arm-None-Eabi -->
     <div>
-      <h2 id="ARM">ARM (arm-none-eabi) <a
-          href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads"
-          class="small text-muted text-decoration-none">[developer.arm.com]</a></h2>
+      <h2 id="ARM">ARM (arm-none-eabi)
+      <ExtLink to="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads" small remove-path/></h2>
 
       <img class="float-end" src="https://upload.wikimedia.org/wikipedia/commons/6/60/ARM_logo.svg" alt="ARM Logo">
 
@@ -154,13 +162,9 @@
 
       Dit is de toolchain die je gebruikt voor de meeste Arm-gebaseerde embedded systemen
 
+      <h3>Installatie</h3>
+      <ExtLink to="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads"/>
 
-      Installatie
-      Download: https://www.st.com/en/development-tools/stm32cubeide.html
-      Voordat je mag downloaden moet je van ST eerst een account aanmaken of je email invullen. De setup verloopt niet,
-      dus
-      deze kan je op meerdere apparaten gebruiken.
-      Onderstaand de installatiestappen.
 
     </div>
 
@@ -169,8 +173,15 @@
 </template>
 
 <script>
+import DefRef from "@/components/Helpers/DefRef";
+import ExtLink from "@/components/Helpers/ExtLink";
+
 export default {
-  name: "VereistenInstalleren"
+  name: "VereistenInstalleren",
+  components: {
+    DefRef,
+    ExtLink
+  }
 }
 </script>
 

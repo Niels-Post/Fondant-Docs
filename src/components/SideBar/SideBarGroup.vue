@@ -1,14 +1,22 @@
 <template>
+  <router-link id="" v-if="link" :to="link" class="nav-link text-light" :class="{active: is_active}"
+               @click="setVisible($event)"><span><i
+      class="bi bi-chevron-right sidebargroup-chevron me-2" ref="chevron_el" :class="{active: children_visible}"></i>
+  </span>
+    <span class="counter_before">
+          {{ title }}
+
+    </span>
+  </router-link>
+
+  <a href="#" v-if="!link" class="nav-link text-muted counter_before" @click="toggleVisible()"> {{ title }}</a>
 
   <li class="nav-item">
-    <router-link id="" v-if="link" :to="link" class="nav-link text-light"  :class="{active: is_active}"  @click.self="setVisible()"><span @click.prevent="toggleVisible()"><i class="bi bi-chevron-right sidebargroup-chevron me-2" :class="{active: children_visible}" ></i></span>{{title}}</router-link>
-
-    <a href="#" v-if="!link" class="nav-link text-muted" @click="toggleVisible()"> {{title}}</a>
 
     <transition name="slidefade">
-      <ul v-if="children_visible" class="nav nav-pills flex-column mb-auto ms-5">
+      <ol v-if="children_visible" class="sidebar_sub nav nav-pills flex-column mb-auto ms-5">
         <slot></slot>
-      </ul>
+      </ol>
     </transition>
 
   </li>
@@ -25,17 +33,19 @@ export default {
 
   methods: {
     toggleVisible() {
-      console.log("Toggle")
-
       this.children_visible = !this.children_visible;
     },
-    setVisible() {
-      console.log("Set")
+    setVisible(event) {
+      if (event.target === this.$refs.chevron_el) {
+        console.log("tog")
+        this.toggleVisible()
+      } else {
         this.children_visible = true;
+      }
     }
   },
   mounted() {
-    setTimeout(function(){
+    setTimeout(function () {
       this.children_visible = this.$router.currentRoute.value.path.startsWith(this.$props.link)
     }.bind(this))
   },
@@ -47,17 +57,18 @@ export default {
   props: {
     title: String,
     link: {
-      type:String,
-      default:''
+      type: String,
+      default: ''
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 .slidefade-enter-active {
   transition: all 0.5s;
 }
+
 .slidefade-leave-active {
   transition: all 0.5s;
 }
@@ -66,10 +77,19 @@ export default {
   /*max-height: 100%*/
 }
 
-.slidefade-leave-to,.slidefade-enter-from {
+.slidefade-leave-to, .slidefade-enter-from {
   /*max-height: 0;*/
-  overflow: hidden;
   opacity: 0;
+}
+
+
+.sidebar_sub {
+  counter-reset: sidebar_sub;
+}
+
+.sidebar_sub .counter_before::before {
+  counter-increment: sidebar_sub;
+  content: counter(sidebar_sub) ". "
 }
 
 
