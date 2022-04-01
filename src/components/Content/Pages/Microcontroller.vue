@@ -1,6 +1,7 @@
 <template>
   <div class="col-8">
     <h1>Wat is een microcontroller?</h1>
+    <hr>
     <p>
       Tijdens de cursus ben je waarschijnlijk al een aantal keren tegen begrippen zoals microcontroller en embedded
       aangelopen,
@@ -9,7 +10,7 @@
       en nemen we door hoe een microcontroller in het algemeen werkt.
     </p>
 
-    <hr>
+    <hr class="spacer">
 
     <!-- MPU's -->
     <div>
@@ -52,7 +53,7 @@
       </ul>
     </div>
 
-    <hr>
+    <hr class="spacer">
 
     <!-- MPU vs MCU -->
     <div>
@@ -148,7 +149,7 @@
 
     </div>
 
-    <hr>
+    <hr class="spacer">
 
     <!-- Embedded Systemen -->
     <div>

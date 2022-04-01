@@ -1,6 +1,7 @@
 <template>
   <div class="col-8">
     <h1>Vereisten installeren</h1>
+    <hr>
     <p>
       Er komt nogal wat kijken bij het werken met microcontrollers. Niet alleen heb je een speciale cross-compiler nodig
       voor je C++ code, een programma om de code te “uploaden” naar je microcontroller, en om je programma tijdens het
@@ -19,7 +20,7 @@
       installatie- en instelstappen anders dan die voor Windows.
     </p>
 
-    <hr>
+    <hr class="spacer">
 
 
     <!-- STM32 Cube IDE -->
@@ -61,7 +62,7 @@
 
     </div>
 
-    <hr>
+    <hr class="spacer">
 
     <!-- CLion -->
     <div>
@@ -104,7 +105,7 @@
 
     </div>
 
-    <hr>
+    <hr class="spacer">
 
     <!-- OpenOCD -->
     <div>
@@ -127,7 +128,7 @@
       </p>
     </div>
 
-    <hr>
+    <hr class="spacer">
 
     <!-- Arm-None-Eabi -->
     <div>

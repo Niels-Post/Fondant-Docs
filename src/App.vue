@@ -18,8 +18,12 @@
       <SideBarLink link="/DeMicrocontroller#EmbeddedSystemen">Embedded Systemen</SideBarLink>
     </SideBarGroup>
 
-    <SideBarGroup title="Onderdelen van een microcontroller" link="/MicrocontrollerOnderdelen">
-      <SideBarLink link="/MicrocontrollerOnderdelen#InformatieVinden">Informatie vinden</SideBarLink>
+    <SideBarGroup title="Informatie Vinden" link="/InformatieVinden">
+      <SideBarLink link="/InformatieVinden#OpsplitsingDocumentatie">Opsplitsing van Documentatie</SideBarLink>
+      <SideBarLink link="/InformatieVinden#HetDevBoard">Het (Development) Board</SideBarLink>
+      <SideBarLink link="/InformatieVinden#DeMicrocontroller">De microcontroller</SideBarLink>
+      <SideBarLink link="/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
+      <SideBarLink link="/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
     </SideBarGroup>
 
 
@@ -84,6 +88,12 @@ export default {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  hr.spacer {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
 
 
 

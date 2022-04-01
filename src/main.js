@@ -10,6 +10,7 @@ import ContentStart from "@/components/Content/ContentStart";
 import DeMicrocontroller from "@/components/Content/Pages/Microcontroller";
 import VereistenInstalleren from "@/components/Content/Pages/Installatie";
 import MicrocontrollerOnderdelen from "@/components/Content/Pages/MicrocontrollerOnderdelen";
+import InformatieVinden from "@/components/Content/Pages/InformatieVinden";
 
 const routes = [
     {
@@ -31,6 +32,11 @@ const routes = [
         path: "/MicrocontrollerOnderdelen",
         name: "Onderdelen van een Microcontroller",
         component: MicrocontrollerOnderdelen
+    },
+    {
+        path: "/InformatieVinden",
+        name: "Informatie Vinden",
+        component: InformatieVinden
     }
 ]
 

@@ -12,7 +12,12 @@ export default {
   },
   computed: {
       definition() {
-        return useDefinitions().value[this.n]
+        let value = useDefinitions().value[this.n]
+        if(!value) {
+          console.log(`Unknown definition: ${this.n}`)
+        }
+
+        return value
     }
   },
   mounted() {
