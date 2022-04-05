@@ -46,6 +46,8 @@
       </p>
 
 
+
+
       <h4>Installatie</h4>
       <a href="https://www.st.com/en/development-tools/stm32cubeide.html" class="text-muted font-monospace text-decoration-none">[st.com/en/development-tools/stm32cubeide.html]</a>
 
@@ -55,6 +57,18 @@
         In het tweede geval krijg je een link toegestuurd. Deze setup verloopt niet,
         dus deze kan je op meerdere apparaten gebruiken. Onderstaand de installatiestappen.
       </div>
+
+
+      <ImageCarousel>
+        <CarouselImage :src="require(`@/assets/Installatie/STM32/1.png`)" alt="Start STM32 Setup" title="">Start</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/STM32/2.png`)" alt="License Agreement" title="">Licentieovereenkomst</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/STM32/3.png`)" alt="Installatielocatie" title="">Pas zonodig de installatielocatie aan naar wens</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/STM32/4.png`)" alt="ALT" title="">Kies drivers om te installeren. Voor deze module zijn alleen de ST-link drivers nodig</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/STM32/5.png`)" alt="ALT" title="">Installeer de driverbestanden</CarouselImage>
+      </ImageCarousel>
+
+
+
       <p>
 
       </p>
@@ -92,8 +106,6 @@
 
       <h3>Installatie</h3>
 
-
-      <h4>Installeren</h4>
       <ExtLink to="https://www.jetbrains.com/clion"/>
       <div class="alert alert-warning">
         Voor PyCharm kan je gebruik maken van de Community Edition, die gratis is. Zo’n editie is er helaas voor CLion
@@ -102,6 +114,14 @@
         <ExtLink to="https://www.jetbrains.com/shop/eform/students"/>
         Hier kan je een account aanmaken en je aanmelden met je HU-email.
       </div>
+
+      <ImageCarousel>
+        <CarouselImage :src="require(`@/assets/Installatie/CLion/1.png`)" alt="Start CLion Setup" title="">Start</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/CLion/2.png`)" alt="Clion License Agreement" title="">Installatielocatie</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/CLion/3.png`)" alt="Opties" title="">Kies de opties voor de installatie. CLion zal je vaak vanuit je project gebruiken, dus de bestandsassociaties zijn niet nodig.</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/CLion/4.png`)" alt="ALT" title="">Kies een map in het startmenu om snelkoppelingen voor CLion in te zetten</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/CLion/5.png`)" alt="ALT" title="">Einde setup</CarouselImage>
+      </ImageCarousel>
 
     </div>
 
@@ -126,6 +146,22 @@
       <p>
         <ExtLink to="https://github.com/openocd-org/openocd/releases"/>
       </p>
+
+      <ImageCarousel>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/1.png`)" alt="OpenOCD ZIP contents" title="">De uitgepakte .zip van OpenOCD heeft deze inhoud</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/2.png`)" alt="OpenOCD kopieren" title="">
+          Kopiëer deze hele map naar een centrale map (Bijvoorbeeld <span class="emph">C:\Program Files</span>). Je hebt hier mogelijk administratortoegang voor nodig.
+
+          <p>
+            De bin-map zal zich bevinden op de locatie <span class="emph">C:\Program Files\OpenOCD\bin</span>
+          </p>
+           </CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/3.png`)" alt="Sysdm.cpl" title="">Zoek in het startmenu naar <span class="emph">sysdm.cpl</span></CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/4.png`)" alt="ALT" title="">Selecteer <span class="emph">Environment variables</span> of <span class="emph">Omgevingsvariabelen</span> </CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/5.png`)" alt="ALT" title="">Druk op <span class="emph">PATH</span> onder <span class="emph">user variables</span> en druk <span class="emph">edit</span></CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/6.png`)" alt="ALT" title="">Druk nu op <span class="emph">new</span> en voer het pad naar de bin-map van OpenOCD in</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/OpenOCD/7.png`)" alt="ALT" title="">Door het aanpassen van de omgevingsvariabelen kan je nu op alle terminals in Windows een aanroep aan openocd doen. Dit kan je controleren door in een powershell venster <span class="emph">openocd --version</span> te typen</CarouselImage>
+      </ImageCarousel>
     </div>
 
     <hr class="spacer">
@@ -167,6 +203,14 @@
       <ExtLink to="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads"/>
 
 
+      <ImageCarousel>
+        <CarouselImage :src="require(`@/assets/Installatie/ARM/1.png`)" alt="Start ARM Setup" title="">Start</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/ARM/2.png`)" alt="ARM License Agreement" title="">Licentieovereenkomst</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/ARM/3.png`)" alt="ARM Install location" title="">Installatielocatie</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/ARM/4.png`)" alt="ALT" title="">Opties voor de installatie. Zorg ervoor dat <span class="emph">Add path to environment variable</span> aangevinkt is. Hierdoor hoef je later niet naar het installatiepad van ARM te zoeken</CarouselImage>
+        <CarouselImage :src="require(`@/assets/Installatie/ARM/5.png`)" alt="ALT" title="">Einde setup</CarouselImage>
+      </ImageCarousel>
+
     </div>
 
 
@@ -176,12 +220,16 @@
 <script>
 import DefRef from "@/components/Helpers/DefRef";
 import ExtLink from "@/components/Helpers/ExtLink";
+import ImageCarousel from "@/components/Carousel/ImageCarousel";
+import CarouselImage from "@/components/Carousel/CarouselImage";
 
 export default {
   name: "VereistenInstalleren",
   components: {
     DefRef,
-    ExtLink
+    ExtLink,
+    ImageCarousel,
+    CarouselImage
   }
 }
 </script>

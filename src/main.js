@@ -11,6 +11,8 @@ import DeMicrocontroller from "@/components/Content/Pages/Microcontroller";
 import VereistenInstalleren from "@/components/Content/Pages/Installatie";
 import MicrocontrollerOnderdelen from "@/components/Content/Pages/MicrocontrollerOnderdelen";
 import InformatieVinden from "@/components/Content/Pages/InformatieVinden";
+import DigitaleLogica from "@/components/Content/Pages/DigitaleLogica";
+import SerialCommunication from "@/components/Content/Pages/SerialCommunication";
 
 const routes = [
     {
@@ -37,6 +39,16 @@ const routes = [
         path: "/InformatieVinden",
         name: "Informatie Vinden",
         component: InformatieVinden
+    },
+    {
+        path: "/DigitaleLogica",
+        name: "Digitale Logica",
+        component: DigitaleLogica
+    },
+    {
+        path: "/SerialCommunication",
+        name: "Seriële Communicatie",
+        component: SerialCommunication
     }
 ]
 

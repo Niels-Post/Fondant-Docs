@@ -84,7 +84,7 @@
         <DefRef n="pinout"/>
         . Hierin zie je
         welke fysieke pins zijn aangesloten op welk interne pinnummer. Vaak kan je hierin ook zien welke extra functies
-        bepaalde pins hebben.
+        bepaalde pins hebben. De pinout van de BluePill is te vinden op <ExtLink to="https://solovjov.net/reblag.dk/The-Generic-STM32F103-Pinout-Diagram.jpg">solovjev.net</ExtLink>
       </p>
 
       <h4>Datasheet / Gegevenspagina</h4>

@@ -24,9 +24,9 @@
       </p>
 
       <p>
-        Deze microprocessoren zijn meestal opgebouwd met de Von Neumann Architectuur in gedachten. Hieronder staat deze
-        architectuur kort beschreven, maar voor meer informatie, zie
-        <a href="https://nl.wikipedia.org/wiki/Von_Neumann-architectuur">https://nl.wikipedia.org/wiki/Von_Neumann-architectuur</a>.
+        Deze microprocessoren zijn meestal opgebouwd met de <a href="https://nl.wikipedia.org/wiki/Von_Neumann-architectuur">Von Neumann Architectuur</a> in gedachten. Hieronder staat deze
+        architectuur kort beschreven.
+        .
       </p>
 
       <div class="col-6">
@@ -48,7 +48,7 @@
         <li>
           <span class="emph">Controle-eenheid (Control Unit, CU) </span><br>
           Stuurt de processor aan; De CU haalt instructies op uit het geheugen, en vertaalt deze naar elektrische
-          signalen naar de RA en de ALU om de instructie uit te voeren.
+          signalen voor de RA en de ALU om de instructie uit te voeren.
         </li>
       </ul>
     </div>
@@ -133,7 +133,7 @@
       <h4>Complexe berekeningen</h4>
       <p>
         Omdat microcontrollers een simpele instructieset hebben zijn complexe berekeningen vaak een stuk langzamer. Op
-        heel veel microcontrollers is er bijvoorbeeld kommagetalleneenheid (Floating Point Unit, FPU). Tijdens het
+        heel veel microcontrollers is er bijvoorbeeld geen kommagetalleneenheid (Floating Point Unit, FPU). Tijdens het
         programmeren met kommagetallen zal je hier weinig
         van merken, maar tijdens het compileren van de code past de compiler veel trucjes toe om de berekeningen te
         kunnen doen zonder FPU. Hier zijn in de praktijk vaak erg veel losse instructies voor nodig, waardoor de
@@ -142,7 +142,7 @@
 
       <p>
         Hiernaast zal je rekening moeten houden met het langzamer tikken van de processor. Waar een computer-processor
-        vaak werkt met snelheden van 2 GhZ of meer, hebben microcontrollers vaak maar een kloksnelheid van 80MhZ. Dit
+        vaak werkt met snelheden van 2 GhZ of meer, moet je bij microcontrollers eerder denken aan een snelheid van ongeveer 80mHz. Dit
         zorgt ervoor dat inefficiente software al snel een grote invloed heeft op het aantal berekeningen wat je per
         seconde kan uitvoeren.
       </p>

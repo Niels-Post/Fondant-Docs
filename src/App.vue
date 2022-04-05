@@ -1,16 +1,10 @@
 <template>
   <!--  <img alt="Vue logo" src="./assets/logo.png">-->
-  <SideBar title="Fondant">
-    <SideBarLink link="/">Start</SideBarLink>
+  <SideBar title="Fondant" link="/">
+    <h5>Theorie</h5>
 
 
 
-    <SideBarGroup title="Installatie" link="/Installatie">
-      <SideBarLink link="/Installatie#CubeIDE">STM32CubeIDE</SideBarLink>
-      <SideBarLink link="/Installatie#CLion">CLion</SideBarLink>
-      <SideBarLink link="/Installatie#OpenOCD">OpenOCD</SideBarLink>
-      <SideBarLink link="/Installatie#ARM">ARM</SideBarLink>
-    </SideBarGroup>
 
     <SideBarGroup title="Wat is een microcontroller" link="/DeMicrocontroller">
       <SideBarLink link="/DeMicrocontroller#Microprocessors">Microprocessors</SideBarLink>
@@ -26,10 +20,27 @@
       <SideBarLink link="/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
     </SideBarGroup>
 
+    <SideBarGroup title="Digitale Logica" link="/DigitaleLogica">
 
+    </SideBarGroup>
 
+    <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
 
+    </SideBarGroup>
 
+    <hr>
+    <h5>Buildomgeving</h5>
+    <SideBarGroup title="Installatie" link="/Installatie">
+      <SideBarLink link="/Installatie#CubeIDE">STM32CubeIDE</SideBarLink>
+      <SideBarLink link="/Installatie#CLion">CLion</SideBarLink>
+      <SideBarLink link="/Installatie#OpenOCD">OpenOCD</SideBarLink>
+      <SideBarLink link="/Installatie#ARM">ARM</SideBarLink>
+    </SideBarGroup>
+
+    <SideBarGroup title="Workflow" link="/WorkFlow"></SideBarGroup>
+
+    <hr>
+    <h5>Ontwikkelen</h5>
 
   </SideBar>
 
