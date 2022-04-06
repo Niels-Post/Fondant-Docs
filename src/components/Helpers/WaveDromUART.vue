@@ -4,7 +4,7 @@
 
       <form class="row  g-3 align-items-center">
          <div class="col-12 col-md-4 form-floating">
-               <select class="form-select form-select-sm" v-model="selectDataBits">
+               <select class="form-select " v-model="selectDataBits">
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
@@ -15,7 +15,7 @@
          </div>
          <div class="col-12  col-md-4 ">
             <div class="form-floating">
-               <select class="form-select form-select-sm" v-model="selectParityBits">
+               <select class="form-select " v-model="selectParityBits">
                   <option value="0">0</option>
                   <option value="1">1</option>
                </select>
@@ -26,7 +26,7 @@
 
          <div class="col-12  col-md-4 ">
             <div class="form-floating">
-               <select class="form-select form-select-sm" v-model="selectStopBits">
+               <select class="form-select " v-model="selectStopBits">
                   <option value="1" selected>1</option>
                   <option value="2">2</option>
                </select>
@@ -47,7 +47,7 @@
 
          <div class="col-12  col-md-4 ">
             <div class="form-floating">
-               <select class="form-select form-select-sm" v-model="selectParityMode">
+               <select class="form-select " v-model="selectParityMode">
                   <option value="even" selected>even</option>
                   <option value="odd">oneven</option>
                </select>
