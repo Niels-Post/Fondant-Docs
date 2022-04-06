@@ -1,5 +1,5 @@
 <template>
-  <div class="col-8">
+  <div>
     <h1>Informatie Vinden</h1>
 
 

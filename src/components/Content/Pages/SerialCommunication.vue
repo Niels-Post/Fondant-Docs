@@ -1,5 +1,5 @@
 <template>
-   <div class="col-8">
+   <div >
       <h1>Seriële communicatie</h1>
       <hr>
       <p>
@@ -90,20 +90,19 @@
             op de microcontroller.
          </p>
 
-         <h4>Werking</h4>
+         <h4>Werking en parameters</h4>
 
          <WaveDromUART></WaveDromUART>
 
-         <WaveDrom>
-
-         </WaveDrom>
-
+         <hr>
          <p>
-            Hierboven zie je een voorbeeld van een UART-transmissie. Hierbij worden er 5 bits aan data verstuurd.
+            Elke UART transmissie heeft een start-bit, minimaal één stop-bit en een aantal(5-9) data bits. Hiernaast kan een
+            transmissie een parity bit bevatten. In dit stuk leggen we uit wat al deze dingen beteken.
+            In de tool hierboven kan je alle parameters instellen om te zien hoe een UART transmissie verandert door
+            elke instelling.
          </p>
 
 
-         <h4>Parameters</h4>
 
          <h4>Uitdagingen</h4>
 
@@ -153,14 +152,12 @@
 </template>
 
 <script>
-import WaveDrom from "@/components/Helpers/WaveDrom";
 import DefRef from "@/components/Helpers/DefRef";
 import WaveDromUART from "@/components/Helpers/WaveDromUART";
 
 export default {
    name: "SerialCommunication",
    components: {
-      WaveDrom,
       DefRef,
       WaveDromUART
    }

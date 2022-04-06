@@ -1,60 +1,63 @@
 <template>
   <!--  <img alt="Vue logo" src="./assets/logo.png">-->
   <SideBar title="Fondant" link="/">
-    <h5>Theorie</h5>
+     <template v-slot:sidebar>
+        <h5>Theorie</h5>
 
-    <SideBarGroup title="Over Embedded" open_link="/OverEmbedded">
-      <SideBarGroup title="Wat is een microcontroller" link="/OverEmbedded/DeMicrocontroller">
-        <SideBarLink link="/OverEmbedded/DeMicrocontroller#Microprocessors">Microprocessors</SideBarLink>
-        <SideBarLink link="/OverEmbedded/DeMicrocontroller#MicroProcessorsVsMicroControllers">Microprocessors vs Microcontrollers
-        </SideBarLink>
-        <SideBarLink link="/OverEmbedded/DeMicrocontroller#EmbeddedSystemen">Embedded Systemen</SideBarLink>
-      </SideBarGroup>
+        <SideBarGroup title="Over Embedded" open_link="/OverEmbedded">
+           <SideBarGroup title="Wat is een microcontroller" link="/OverEmbedded/DeMicrocontroller">
+              <SideBarLink link="/OverEmbedded/DeMicrocontroller#Microprocessors">Microprocessors</SideBarLink>
+              <SideBarLink link="/OverEmbedded/DeMicrocontroller#MicroProcessorsVsMicroControllers">Microprocessors vs
+                 Microcontrollers
+              </SideBarLink>
+              <SideBarLink link="/OverEmbedded/DeMicrocontroller#EmbeddedSystemen">Embedded Systemen</SideBarLink>
+           </SideBarGroup>
 
-      <SideBarGroup title="Informatie Vinden" link="/OverEmbedded/InformatieVinden">
-        <SideBarLink link="/OverEmbedded/InformatieVinden#OpsplitsingDocumentatie">Opsplitsing van Documentatie</SideBarLink>
-        <SideBarLink link="/OverEmbedded/InformatieVinden#HetDevBoard">Het (Development) Board</SideBarLink>
-        <SideBarLink link="/OverEmbedded/InformatieVinden#DeMicrocontroller">De microcontroller</SideBarLink>
-        <SideBarLink link="/OverEmbedded/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
-        <SideBarLink link="/OverEmbedded/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
-      </SideBarGroup>
+           <SideBarGroup title="Informatie Vinden" link="/OverEmbedded/InformatieVinden">
+              <SideBarLink link="/OverEmbedded/InformatieVinden#OpsplitsingDocumentatie">Opsplitsing van Documentatie
+              </SideBarLink>
+              <SideBarLink link="/OverEmbedded/InformatieVinden#HetDevBoard">Het (Development) Board</SideBarLink>
+              <SideBarLink link="/OverEmbedded/InformatieVinden#DeMicrocontroller">De microcontroller</SideBarLink>
+              <SideBarLink link="/OverEmbedded/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
+              <SideBarLink link="/OverEmbedded/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
+           </SideBarGroup>
 
-      <SideBarGroup title="Peripherals" open_link="/OverEmbedded/Peripherals">
-        <SideBarLink link="/OverEmbedded/Peripherals#OpsplitsingDocumentatie">Introductie</SideBarLink>
-      </SideBarGroup>
-    </SideBarGroup>
+           <SideBarGroup title="Peripherals" open_link="/OverEmbedded/Peripherals">
+              <SideBarLink link="/OverEmbedded/Peripherals#OpsplitsingDocumentatie">Introductie</SideBarLink>
+           </SideBarGroup>
+        </SideBarGroup>
 
 
+        <SideBarGroup title="Digitale Logica" link="/DigitaleLogica">
 
+        </SideBarGroup>
 
-    <SideBarGroup title="Digitale Logica" link="/DigitaleLogica">
+        <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
 
-    </SideBarGroup>
+        </SideBarGroup>
 
-    <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
+        <hr>
+        <h5>Buildomgeving</h5>
+        <SideBarGroup title="Installatie" link="/Installatie">
+           <SideBarLink link="/Installatie#CubeIDE">STM32CubeIDE</SideBarLink>
+           <SideBarLink link="/Installatie#CLion">CLion</SideBarLink>
+           <SideBarLink link="/Installatie#OpenOCD">OpenOCD</SideBarLink>
+           <SideBarLink link="/Installatie#ARM">ARM</SideBarLink>
+        </SideBarGroup>
 
-    </SideBarGroup>
+        <SideBarGroup title="Workflow" link="/WorkFlow"></SideBarGroup>
 
-    <hr>
-    <h5>Buildomgeving</h5>
-    <SideBarGroup title="Installatie" link="/Installatie">
-      <SideBarLink link="/Installatie#CubeIDE">STM32CubeIDE</SideBarLink>
-      <SideBarLink link="/Installatie#CLion">CLion</SideBarLink>
-      <SideBarLink link="/Installatie#OpenOCD">OpenOCD</SideBarLink>
-      <SideBarLink link="/Installatie#ARM">ARM</SideBarLink>
-    </SideBarGroup>
+        <hr>
+        <h5>Ontwikkelen</h5>
 
-    <SideBarGroup title="Workflow" link="/WorkFlow"></SideBarGroup>
+     </template>
 
-    <hr>
-    <h5>Ontwikkelen</h5>
-
+     <template v-slot:content>
+        <router-view class="col-12 col-xl-8"></router-view>
+     </template>
   </SideBar>
 
-  <div class="container-fluid ms-1 p-4 content-container" id="content-container" style="background: #e0e4e8; height: 100vh; overflow: auto">
-    <router-view></router-view>
 
-  </div>
 
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="col-8">
+  <div>
     <h1>Wat is een microcontroller?</h1>
     <hr>
     <p>
@@ -26,10 +26,9 @@
       <p>
         Deze microprocessoren zijn meestal opgebouwd met de <a href="https://nl.wikipedia.org/wiki/Von_Neumann-architectuur">Von Neumann Architectuur</a> in gedachten. Hieronder staat deze
         architectuur kort beschreven.
-        .
       </p>
 
-      <div class="col-6">
+      <div class="col-12 col-xl-8">
         <img src="@/assets/DeMicrocontroller/VonNeumannArchitecture.png" class="img-fluid" alt="De Von Neumann Architecture">
       </div>
 
@@ -73,7 +72,7 @@
         op de Von Neumann architectuur maar heeft een belangrijk verschil.
       </p>
 
-      <div class="col-6">
+       <div class="col-12 col-xl-8">
         <img src="@/assets/DeMicrocontroller/HarvardArchitecture.png" class="img-fluid" alt="De Harvard Architecture">
       </div>
 
