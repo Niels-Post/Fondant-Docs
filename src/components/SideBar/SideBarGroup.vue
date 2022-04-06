@@ -1,5 +1,5 @@
 <template>
-  <router-link id="" v-if="link" :to="link" class="nav-link text-light" :class="{active: is_active}"
+  <router-link v-if="link" :to="link" class="nav-link text-light" :class="{active: is_active}"
                @click="setVisible($event)"><span><i
       class="bi bi-chevron-right sidebargroup-chevron me-2" ref="chevron_el" :class="{active: children_visible}"></i>
   </span>
@@ -9,7 +9,18 @@
     </span>
   </router-link>
 
-  <a href="#" v-if="!link" class="nav-link text-muted counter_before" @click="toggleVisible()"> {{ title }}</a>
+
+  <div v-if="!link" href="#" class="nav-link text-light" :class="{active: is_active}"
+               @click="toggleVisible($event)"><span><i
+      class="bi bi-chevron-right sidebargroup-chevron me-2" ref="chevron_el" :class="{active: children_visible}"></i>
+  </span>
+    <span class="counter_before">
+          {{ title }}
+
+    </span>
+  </div>
+
+<!--  <a href="#" v-if="!link" class="nav-link text-muted counter_before" @click="toggleVisible()"> {{ title }}</a>-->
 
   <li class="nav-item">
 
@@ -46,12 +57,19 @@ export default {
   },
   mounted() {
     setTimeout(function () {
-      this.children_visible = this.$router.currentRoute.value.path.startsWith(this.$props.link)
+      if(this.link.length > 0) {
+        this.children_visible = this.$router.currentRoute.value.path.startsWith(this.link)
+      }
+      else if(this.open_link.length > 0) {
+        this.children_visible = this.$router.currentRoute.value.path.startsWith(this.open_link)
+      } else {
+        this.children_visible = false;
+      }
     }.bind(this))
   },
   computed: {
     is_active() {
-      return (this.$route.path + this.$route.hash) === this.link;
+      return (this.$route.path + this.$route.hash) === this.link ;
     }
   },
   props: {
@@ -59,6 +77,10 @@ export default {
     link: {
       type: String,
       default: ''
+    },
+    open_link: {
+      type:String,
+      default:''
     }
   }
 }
@@ -100,6 +122,10 @@ export default {
 
 .sidebargroup-chevron.active {
   transform: rotate(90deg);
+}
+
+div.nav-link {
+  cursor: pointer
 }
 
 

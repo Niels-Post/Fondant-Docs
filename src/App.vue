@@ -3,22 +3,29 @@
   <SideBar title="Fondant" link="/">
     <h5>Theorie</h5>
 
+    <SideBarGroup title="Over Embedded" open_link="/OverEmbedded">
+      <SideBarGroup title="Wat is een microcontroller" link="/OverEmbedded/DeMicrocontroller">
+        <SideBarLink link="/OverEmbedded/DeMicrocontroller#Microprocessors">Microprocessors</SideBarLink>
+        <SideBarLink link="/OverEmbedded/DeMicrocontroller#MicroProcessorsVsMicroControllers">Microprocessors vs Microcontrollers
+        </SideBarLink>
+        <SideBarLink link="/OverEmbedded/DeMicrocontroller#EmbeddedSystemen">Embedded Systemen</SideBarLink>
+      </SideBarGroup>
 
+      <SideBarGroup title="Informatie Vinden" link="/OverEmbedded/InformatieVinden">
+        <SideBarLink link="/OverEmbedded/InformatieVinden#OpsplitsingDocumentatie">Opsplitsing van Documentatie</SideBarLink>
+        <SideBarLink link="/OverEmbedded/InformatieVinden#HetDevBoard">Het (Development) Board</SideBarLink>
+        <SideBarLink link="/OverEmbedded/InformatieVinden#DeMicrocontroller">De microcontroller</SideBarLink>
+        <SideBarLink link="/OverEmbedded/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
+        <SideBarLink link="/OverEmbedded/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
+      </SideBarGroup>
 
-
-    <SideBarGroup title="Wat is een microcontroller" link="/DeMicrocontroller">
-      <SideBarLink link="/DeMicrocontroller#Microprocessors">Microprocessors</SideBarLink>
-      <SideBarLink link="/DeMicrocontroller#MicroProcessorsVsMicroControllers">Microprocessors vs Microcontrollers</SideBarLink>
-      <SideBarLink link="/DeMicrocontroller#EmbeddedSystemen">Embedded Systemen</SideBarLink>
+      <SideBarGroup title="Peripherals" open_link="/OverEmbedded/Peripherals">
+        <SideBarLink link="/OverEmbedded/Peripherals#OpsplitsingDocumentatie">Introductie</SideBarLink>
+      </SideBarGroup>
     </SideBarGroup>
 
-    <SideBarGroup title="Informatie Vinden" link="/InformatieVinden">
-      <SideBarLink link="/InformatieVinden#OpsplitsingDocumentatie">Opsplitsing van Documentatie</SideBarLink>
-      <SideBarLink link="/InformatieVinden#HetDevBoard">Het (Development) Board</SideBarLink>
-      <SideBarLink link="/InformatieVinden#DeMicrocontroller">De microcontroller</SideBarLink>
-      <SideBarLink link="/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
-      <SideBarLink link="/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
-    </SideBarGroup>
+
+
 
     <SideBarGroup title="Digitale Logica" link="/DigitaleLogica">
 

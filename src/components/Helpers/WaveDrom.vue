@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :src="wavedrom_url">
+       <object :data="wavedrom_url"></object>
         <div class="hidden" ref="wavedrom_script">
             <slot></slot>
         </div>

@@ -54,8 +54,7 @@
 
       <p>
         Hierboven zie je een elektronisch schema voor een STM32 Bluepill die aangesloten is op een
-        <DefRef n="MPU6050"/>
-        .
+        <DefRef n="MPU6050"/>-module.
         Hierin zijn 4 onderdelen aangegeven met een cijfer. In dit voorbeeld zul je voor elk van deze onderdelen aparte
         documentatie kunnen vinden.
         Welke documentatie je het meest nodig hebt zal afhangen van de manier waarop je de onderdelen gebruikt.

@@ -7,10 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {createWebHistory, createRouter} from "vue-router";
 import ContentStart from "@/components/Content/ContentStart";
-import DeMicrocontroller from "@/components/Content/Pages/Microcontroller";
-import VereistenInstalleren from "@/components/Content/Pages/Installatie";
-import MicrocontrollerOnderdelen from "@/components/Content/Pages/MicrocontrollerOnderdelen";
-import InformatieVinden from "@/components/Content/Pages/InformatieVinden";
+import DeMicrocontroller from "@/components/Content/Pages/OverEmbedded/Microcontroller";
+import VereistenInstalleren from "@/components/Content/Pages/Installatie/Installatie";
+import MicrocontrollerOnderdelen from "@/components/Content/Pages/OverEmbedded/Peripherals";
+import InformatieVinden from "@/components/Content/Pages/OverEmbedded/InformatieVinden";
 import DigitaleLogica from "@/components/Content/Pages/DigitaleLogica";
 import SerialCommunication from "@/components/Content/Pages/SerialCommunication";
 
@@ -26,17 +26,17 @@ const routes = [
         component: VereistenInstalleren
     },
     {
-        path: "/DeMicrocontroller",
+        path: "/OverEmbedded/DeMicrocontroller",
         name: "De MicroController",
         component: DeMicrocontroller
     },
     {
-        path: "/MicrocontrollerOnderdelen",
-        name: "Onderdelen van een Microcontroller",
+        path: "/OverEmbedded/Peripherals",
+        name: "Peripherals",
         component: MicrocontrollerOnderdelen
     },
     {
-        path: "/InformatieVinden",
+        path: "/OverEmbedded/InformatieVinden",
         name: "Informatie Vinden",
         component: InformatieVinden
     },
