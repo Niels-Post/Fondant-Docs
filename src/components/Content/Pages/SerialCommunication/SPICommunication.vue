@@ -3,7 +3,7 @@
       <h1>SPI</h1>
       <hr>
       <p>
-         <DefRef n="SPI"/>
+         <DefRef n="SPI"/> staat voor Serial Peripheral Interface
          is een communicatiewijze waarbij één controller vaak meerdere peripherals aanstuurt.
          De SPI interface is te herkennen aan de pins
          <DefRef n="CS" pin/>
@@ -23,8 +23,10 @@
          .
       </p>
 
-      <ExtImage src="https://upload.wikimedia.org/wikipedia/commons/f/fc/SPI_three_slaves.svg"
-                source="https://upload.wikimedia.org/wikipedia/commons/f/fc/SPI_three_slaves.svg"/>
+      <div class="col-12 col-xl-8">
+         <object :data="require('@/assets/SerialCommunication/SPIDiagram.svg')" class="img-fluid"></object>
+      </div>
+
 
       <p>
          Een controller gebruikt
@@ -283,7 +285,6 @@
 <script>
 import titleMixin from "@/components/Helpers/titleMixin";
 import DefRef from "@/components/Helpers/DefRef";
-import ExtImage from "@/components/Helpers/ExtImage";
 import WaveDromSPI from "@/components/Helpers/WaveDromSPI";
 
 export default {
@@ -291,7 +292,6 @@ export default {
    title: "SPI",
    components: {
       DefRef,
-      ExtImage,
       WaveDromSPI
    },
    mixins: [titleMixin]

@@ -15,6 +15,13 @@
          In dit hoofdstuk nemen we de meest gebruikte standaarden door, en leggen we uit wat de verschillen zijn.
       </p>
 
+      <h4>Grounding</h4>
+      <p>
+         Voor elke soort seriële communicatie is het essentieel dat de GND van beide componenten aan elkaar is aangesloten.
+         Anders kan het zijn dat wat voor de ene kant hoog is, voor de andere kant laag is. Omdat dit standaard is voor
+         alle aansluitingen wordt dit in dit hoofdstuk niet expliciet getoond in diagrammen.
+      </p>
+
       <h4>Uitdagingen</h4>
 
       <p>

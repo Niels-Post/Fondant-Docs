@@ -16,6 +16,11 @@
          deze standaard verwezen.
       </p>
 
+
+      <div class="col-12 col-xl-8">
+         <object :data="require('@/assets/SerialCommunication/UARTDiagram.svg')" class="img-fluid" alt="De Harvard Architecture"></object>
+      </div>
+
       <p>
          Een apparaat gebruikt bij UART zijn eigen <span class="emph">TX</span> om data te versturen. Deze data komt
          dus bij de andere kant

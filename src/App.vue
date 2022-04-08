@@ -35,6 +35,7 @@
         <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
            <SideBarLink link="/SerialCommunication/UART">UART</SideBarLink>
            <SideBarLink link="/SerialCommunication/SPI">SPI</SideBarLink>
+           <SideBarLink link="/SerialCommunication/I2C">I2C</SideBarLink>
         </SideBarGroup>
 
         <hr>

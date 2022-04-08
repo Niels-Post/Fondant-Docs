@@ -15,6 +15,7 @@ import DigitaleLogica from "@/components/Content/Pages/DigitaleLogica";
 import SerialCommunication from "@/components/Content/Pages/SerialCommunication";
 import UartCommunication from "@/components/Content/Pages/SerialCommunication/UartCommunication";
 import SPICommunication from "@/components/Content/Pages/SerialCommunication/SPICommunication";
+import I2CCommunication from "@/components/Content/Pages/SerialCommunication/I2CCommunication";
 
 const routes = [
     {
@@ -61,6 +62,11 @@ const routes = [
         path: "/SerialCommunication/SPI",
         name: "SPI",
         component: SPICommunication
+    },
+    {
+        path: "/SerialCommunication/I2C",
+        name: "I2C",
+        component: I2CCommunication
     }
 ]
 
