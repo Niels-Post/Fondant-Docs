@@ -44,12 +44,15 @@
 <script>
 
     import DefRef from "@/components/Helpers/DefRef";
+    import titleMixin from "@/components/Helpers/titleMixin";
 
     export default {
         name: "DigitaleLogica",
         components: {
             DefRef
-        }
+        },
+       title: "Digitale Logica",
+       mixins: [titleMixin]
     }
 </script>
 

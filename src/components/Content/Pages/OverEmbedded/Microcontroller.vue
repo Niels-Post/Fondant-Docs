@@ -192,8 +192,12 @@
 </template>
 
 <script>
+import titleMixin from "@/components/Helpers/titleMixin";
+
 export default {
-  name: "DeMicrocontroller"
+  name: "DeMicrocontroller",
+   title: "De Microcontroller",
+   mixins: [titleMixin]
 }
 </script>
 

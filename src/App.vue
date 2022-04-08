@@ -33,7 +33,7 @@
         </SideBarGroup>
 
         <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
-
+           <SideBarLink link="/SerialCommunication/UART">UART</SideBarLink>
         </SideBarGroup>
 
         <hr>

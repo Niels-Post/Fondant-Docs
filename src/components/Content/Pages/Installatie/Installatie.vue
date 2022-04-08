@@ -222,6 +222,7 @@ import DefRef from "@/components/Helpers/DefRef";
 import ExtLink from "@/components/Helpers/ExtLink";
 import ImageCarousel from "@/components/Carousel/ImageCarousel";
 import CarouselImage from "@/components/Carousel/CarouselImage";
+import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
   name: "VereistenInstalleren",
@@ -230,7 +231,9 @@ export default {
     ExtLink,
     ImageCarousel,
     CarouselImage
-  }
+  },
+   title: "Installatie",
+   mixins: [titleMixin]
 }
 </script>
 

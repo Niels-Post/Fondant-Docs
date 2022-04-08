@@ -9,8 +9,12 @@
 </template>
 
 <script>
+import titleMixin from "@/components/Helpers/titleMixin";
+
 export default {
-  name: "ContentStart"
+  name: "ContentStart",
+   title: "Home",
+   mixins: [titleMixin]
 }
 </script>
 

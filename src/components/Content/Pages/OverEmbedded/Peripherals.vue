@@ -19,8 +19,12 @@
 
 <script>
 
+import titleMixin from "@/components/Helpers/titleMixin";
+
 export default {
   name: "MicrocontrollerOnderdelen",
+   title: "Peripherals",
+   mixins: [titleMixin]
 
 }
 </script>

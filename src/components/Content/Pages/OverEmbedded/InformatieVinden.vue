@@ -246,6 +246,7 @@
 import DefRef from "@/components/Helpers/DefRef";
 import ExtImage from "@/components/Helpers/ExtImage";
 import ExtLink from "@/components/Helpers/ExtLink";
+import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
   name: "InformatieVinden",
@@ -253,7 +254,9 @@ export default {
     DefRef,
     ExtImage,
     ExtLink
-  }
+  },
+   title: "Informatie Vinden",
+   mixins: [titleMixin]
 }
 </script>
 

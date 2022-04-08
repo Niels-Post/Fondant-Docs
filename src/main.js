@@ -13,6 +13,8 @@ import MicrocontrollerOnderdelen from "@/components/Content/Pages/OverEmbedded/P
 import InformatieVinden from "@/components/Content/Pages/OverEmbedded/InformatieVinden";
 import DigitaleLogica from "@/components/Content/Pages/DigitaleLogica";
 import SerialCommunication from "@/components/Content/Pages/SerialCommunication";
+import UartCommunication from "@/components/Content/Pages/SerialCommunication/UartCommunication";
+import SPICommunication from "@/components/Content/Pages/SerialCommunication/SPICommunication";
 
 const routes = [
     {
@@ -49,6 +51,16 @@ const routes = [
         path: "/SerialCommunication",
         name: "Seriële Communicatie",
         component: SerialCommunication
+    },
+    {
+        path: "/SerialCommunication/UART",
+        name: "UART",
+        component: UartCommunication
+    },
+    {
+        path: "/SerialCommunication/SPI",
+        name: "SPI",
+        component: SPICommunication
     }
 ]
 
