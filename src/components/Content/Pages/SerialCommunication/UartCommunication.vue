@@ -1,10 +1,8 @@
 <template>
    <div>
       <h2>UART</h2>
-
-
-      <h4>Eigenschappen</h4>
       <hr>
+
       <p>
          <DefRef n="UART"/>
          staat voor Universal Asynchronous Receiver-Transmitter. Een UART verbinding is vaak te herkennen
@@ -12,11 +10,10 @@
          UART-verbinding maakt
          tussen twee chips, verbind je altijd de TX van het ene apparaat met de RX van de ander, en vice-versa.
          Officiëel
-         verwijst UART naar de elektrische tranceivers die de communicatie mogelijk maken, en niet naar het
-         communicatieprotocol.
-         Omdat hiervoor altijd hetzelfde communicatieprotocol wordt gebruikt, wordt ermee nu vaak ook naar dit protocol
-         verwezen.
-
+         verwijst UART naar de elektrische tranceivers die de communicatie mogelijk maken, en niet naar de manier waarop
+         chips communiceren.
+         Echter, omdat hiervoor altijd dezelfde communicatiewijze wordt gebruikt, wordt met de term UART nu vaak ook naar
+         deze standaard verwezen.
       </p>
 
       <p>
@@ -35,10 +32,17 @@
          op de microcontroller.
       </p>
 
-      <h4>Werking en parameters</h4>
+      <p>
+         UART is een <DefRef n="asynchrone interface"/>. Dit betekent dat er tussen 2 communicerende UART-apparaten
+         geen synchronisatie is van de klok, en je dus maar moet hopen dat de klok van beide apparaten op ongeveer
+         dezelfde snelheid tikt.
+      </p>
+
+      <hr class="spacer">
+
+      <h2>Werking en parameters</h2>
 
 
-      <hr>
       <p>
          Elke UART transmissie heeft een start-bit, minimaal één stop-bit en een aantal(5-9) data bits. Hiernaast kan
          een
@@ -118,7 +122,9 @@
          </li>
       </ul>
 
-      <h4>Try it out!</h4>
+      <hr class="spacer">
+
+      <h2>Try it out!</h2>
       <hr>
       <p>
          In de onderstaande configurator kan je de parameters van UART aanpassen, en zien hoe deze het
@@ -127,9 +133,9 @@
 
       <WaveDromUART/>
 
+      <hr class="spacer">
 
-      <h4 class="mt-3">Uitdagingen</h4>
-      <hr>
+      <h2>Uitdagingen</h2>
       <table class="table table-striped">
          <tbody>
          <tr>

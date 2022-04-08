@@ -92,6 +92,20 @@ function clean_wavedrom_binary(binary) {
    return binary
 }
 
+function to_binary(data, size, lsbFirst = false) {
+   let binary = (parseInt(data) >>> 0).toString(2)
+   if (binary.length > size) {
+      return null
+   }
+
+   binary = "0".repeat(size - binary.length) + binary;
+
+   if (lsbFirst) {
+      binary = binary.split("").reverse().join("")
+   }
+   return binary
+}
+
 export default {
    name: "WaveDromUART",
    data() {
@@ -123,15 +137,10 @@ export default {
          return base
       },
       tx_data() {
-         let binary = (parseInt(this.inputData) >>> 0).toString(2)
-         if(binary.length > this.selectDataBits) {
+         let binary = to_binary(this.inputData, this.selectDataBits, this.selectBitOrder === "lsbfirst")
+
+         if(binary === null) {
             return {}
-         }
-
-         binary = "0".repeat(this.selectDataBits - binary.length) + binary;
-
-         if(this.selectBitOrder === "lsbfirst") {
-            binary = binary.split("").reverse().join("")
          }
 
          if(this.selectParityBits === "1") {

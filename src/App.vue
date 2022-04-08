@@ -34,6 +34,7 @@
 
         <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
            <SideBarLink link="/SerialCommunication/UART">UART</SideBarLink>
+           <SideBarLink link="/SerialCommunication/SPI">SPI</SideBarLink>
         </SideBarGroup>
 
         <hr>
