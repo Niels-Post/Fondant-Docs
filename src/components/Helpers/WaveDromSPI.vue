@@ -13,8 +13,8 @@
          <div class="col-12  col-md-4 ">
             <div class="form-floating">
                <select class="form-select " v-model="CPHA">
-                  <option value="0">0 (lees op trailing, schrijf op leading)</option>
-                  <option value="1">1 (lees op leading, schrijf op trailing)</option>
+                  <option value="0">0 (lees op leading, schrijf op trailing)</option>
+                  <option value="1">1 (schrijf op leading, lees op trailing)</option>
                </select>
                <label>CPHA (Clock Phase)</label>
             </div>
@@ -125,7 +125,7 @@ export default {
       sck_signal() {
          let lead = this.CPOL === "0" ? "h" : "l";
          let trail = this.CPOL === "0" ? "l" : "h";
-         if(this.CPHA === "1") {
+         if(this.CPHA === "0") {
             lead = lead.toUpperCase()
          } else {
             trail = trail.toUpperCase()
@@ -139,8 +139,8 @@ export default {
          }
       },
       mosi_signal() {
-         let leading_spacer = ".".repeat(this.CKE);
-         let trailing_spacer = ".".repeat(this.CPHA);
+         let leading_spacer = ".".repeat(this.CPHA);
+         let trailing_spacer = ".".repeat(this.CKE);
 
          return {
             name: "MOSI",
@@ -149,8 +149,8 @@ export default {
          }
       },
       miso_signal() {
-         let leading_spacer = ".".repeat(this.CKE);
-         let trailing_spacer = ".".repeat(this.CPHA);
+         let leading_spacer = ".".repeat(this.CPHA);
+         let trailing_spacer = ".".repeat(this.CKE);
 
          return {
             name: "MISO",
@@ -159,15 +159,7 @@ export default {
          }
       },
       wavedrom_data() {
-         console.log({
-            signal: [
-               this.cs_signal,
-               this.sck_signal,
-               this.mosi_signal,
-               this.miso_signal
-            ],
-            config: {hscale: 1}
-         })
+
          return {
             signal: [
                this.cs_signal,

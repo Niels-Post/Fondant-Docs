@@ -1,6 +1,6 @@
 <template>
-    <div>
-       <object :data="wavedrom_url"></object>
+    <div >
+       <object  :class="widthClasses" :data="wavedrom_url"></object>
         <div class="hidden" ref="wavedrom_script">
             <slot></slot>
         </div>
@@ -15,6 +15,17 @@
                 wavedrom_url: ""
             }
         },
+       props: {
+            fullwidth: Boolean
+       },
+       computed: {
+            widthClasses() {
+               return {
+                  'col-12': true,
+                  'col-xl-8': !this.fullwidth
+               }
+            }
+       },
         mounted() {
             let content = this.$refs.wavedrom_script.innerHTML;
 
