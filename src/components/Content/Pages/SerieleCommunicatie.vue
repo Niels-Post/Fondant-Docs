@@ -81,14 +81,6 @@
       </p>
 
 
-      <hr class="spacer">
-
-
-      <hr class="spacer">
-      <div>
-         <h2>SPI</h2>
-      </div>
-
 
    </div>
 </template>

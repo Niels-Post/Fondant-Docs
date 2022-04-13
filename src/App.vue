@@ -28,15 +28,27 @@
         </SideBarGroup>
 
 
-        <SideBarGroup title="Digitale Logica" link="/DigitaleLogica">
+        <SideBarGroup title="Verbindingen Maken" link="/VerbindingenMaken">
+
+           <SideBarGroup title="Digitale logica" link="/DigitaleLogica"></SideBarGroup>
+
+           <SideBarGroup title="Seriële Communicatie" link="/SerieleCommunicatie">
+              <SideBarLink link="/SerieleCommunicatie/UART">UART</SideBarLink>
+              <SideBarLink link="/SerieleCommunicatie/SPI">SPI</SideBarLink>
+              <SideBarLink link="/SerieleCommunicatie/I2C">I2C</SideBarLink>
+           </SideBarGroup>
+
+           <SideBarGroup class="fix" title="Analoge logica" link="/AnalogeLogica"></SideBarGroup>
+        </SideBarGroup>
+
+        <SideBarGroup title="Geavanceerde functies" link="/GeavanceerdeFuncties">
+           <SideBarLink link="/GeavanceerdeFuncties#DMA">DMA</SideBarLink>
+           <SideBarLink link="/GeavanceerdeFuncties#Timers">Timers</SideBarLink>
+           <SideBarLink link="/GeavanceerdeFuncties#Debugging">Debugging</SideBarLink>
+           <SideBarLink link="/GeavanceerdeFuncties#Watchdogs">Watchdogs</SideBarLink>
 
         </SideBarGroup>
 
-        <SideBarGroup title="Seriële Communicatie" link="/SerialCommunication">
-           <SideBarLink link="/SerialCommunication/UART">UART</SideBarLink>
-           <SideBarLink link="/SerialCommunication/SPI">SPI</SideBarLink>
-           <SideBarLink link="/SerialCommunication/I2C">I2C</SideBarLink>
-        </SideBarGroup>
 
         <hr>
         <h5>Buildomgeving</h5>

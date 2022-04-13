@@ -12,10 +12,12 @@ import VereistenInstalleren from "@/components/Content/Pages/Installatie/Install
 import MicrocontrollerOnderdelen from "@/components/Content/Pages/OverEmbedded/Peripherals";
 import InformatieVinden from "@/components/Content/Pages/OverEmbedded/InformatieVinden";
 import DigitaleLogica from "@/components/Content/Pages/DigitaleLogica";
-import SerialCommunication from "@/components/Content/Pages/SerialCommunication";
-import UartCommunication from "@/components/Content/Pages/SerialCommunication/UartCommunication";
-import SPICommunication from "@/components/Content/Pages/SerialCommunication/SPICommunication";
-import I2CCommunication from "@/components/Content/Pages/SerialCommunication/I2CCommunication";
+import SerialCommunication from "@/components/Content/Pages/SerieleCommunicatie";
+import UartCommunication from "@/components/Content/Pages/SerieleCommunicatie/UartCommunication";
+import SPICommunication from "@/components/Content/Pages/SerieleCommunicatie/SPICommunication";
+import I2CCommunication from "@/components/Content/Pages/SerieleCommunicatie/I2CCommunication";
+import VerbindingenMaken from "@/components/Content/Pages/VerbindingenMaken";
+import GeavanceerdeFuncties from "@/components/Content/Pages/GeavanceerdeFuncties";
 
 const routes = [
     {
@@ -49,24 +51,34 @@ const routes = [
         component: DigitaleLogica
     },
     {
-        path: "/SerialCommunication",
+        path: "/VerbindingenMaken",
+        name: "Verbindingen Maken",
+        component: VerbindingenMaken
+    },
+    {
+        path: "/SerieleCommunicatie",
         name: "Seriële Communicatie",
         component: SerialCommunication
     },
     {
-        path: "/SerialCommunication/UART",
+        path: "/SerieleCommunicatie/UART",
         name: "UART",
         component: UartCommunication
     },
     {
-        path: "/SerialCommunication/SPI",
+        path: "/SerieleCommunicatie/SPI",
         name: "SPI",
         component: SPICommunication
     },
     {
-        path: "/SerialCommunication/I2C",
+        path: "/SerieleCommunicatie/I2C",
         name: "I2C",
         component: I2CCommunication
+    },
+    {
+        path: "/GeavanceerdeFuncties",
+        name: "GeavanceerdeFuncties",
+        component: GeavanceerdeFuncties
     }
 ]
 
