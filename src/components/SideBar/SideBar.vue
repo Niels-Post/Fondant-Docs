@@ -107,6 +107,8 @@ main {
    z-index: 1000;
    max-width: 100vh;
    overflow: hidden;
+   overflow-y: auto;
+   padding-bottom: 100px;
 }
 
 .content-container {

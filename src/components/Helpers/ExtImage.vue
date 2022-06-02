@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6">
+  <div :class="{'col-6': !fullWidth, 'col-12': fullWidth}">
     <img :src="src" ref="ext_image" class="img-fluid"
          :alt="source_fm">
   </div>
@@ -10,7 +10,8 @@ export default {
   name: "ExtImage",
   props: {
     src: String,
-    source: String
+    source: String,
+     fullWidth: Boolean
   },
   computed: {
 

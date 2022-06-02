@@ -45,7 +45,7 @@
 
       <hr class="spacer">
 
-      <h2>Werking en parameters</h2>
+      <h2 id="Werking">Werking en parameters</h2>
 
 
       <p>
@@ -129,7 +129,7 @@
 
       <hr class="spacer">
 
-      <h2>Try it out!</h2>
+      <h2 id="TryItOut">Try it out!</h2>
       <hr>
       <p>
          In de onderstaande configurator kan je de parameters van UART aanpassen, en zien hoe deze het
@@ -140,7 +140,7 @@
 
       <hr class="spacer">
 
-      <h2>Uitdagingen</h2>
+      <h2 id="Uitdagingen">Uitdagingen</h2>
       <table class="table table-striped">
          <tbody>
          <tr>

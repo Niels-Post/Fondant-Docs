@@ -49,14 +49,14 @@
 
       <hr class="spacer">
 
-      <h2>Adressen</h2>
+      <h2 id="Adressen">Adressen</h2>
 
       <p>
          In I2C bepaal je wie de bedoelde ontvanger van een bericht is met het adres. Dit is een waarde van 6 of 10 bits.
          Elk apparaat op de bus dient een ander adres te hebben, om te voorkomen dat meerdere apparaten reageren.
       </p>
 
-      <h2>Werking</h2>
+      <h2 id="Werking">Werking</h2>
 
 
       <h3>Algemeen</h3>
@@ -126,7 +126,7 @@
          op dezelfde bus te hebben zonder problemen.
       </p>
 
-      <h3>Visueel</h3>
+      <h2 id="Visueel">Visueel</h2>
 
       <div class="alert alert-warning">
          In de volgende voorbeelden is de SDA lijn opgesplitst. Dit is om duidelijk te maken welk apparaat de lijn omlaagtrekt.
@@ -372,7 +372,7 @@
 
       <hr class="spacer">
 
-      <h2>Uitdagingen</h2>
+      <h2 id="Uitdagingen">Uitdagingen</h2>
       <table class="table table-striped">
          <tbody>
          <tr>

@@ -68,7 +68,7 @@
 
       <hr class="spacer">
 
-      <h2>Werking</h2>
+      <h2 id="Werking">Werking</h2>
 
       <p>
          Voor een SPI transmissie is
@@ -117,7 +117,7 @@
 
       <hr class="spacer">
 
-      <h2>Parameters</h2>
+      <h2 id="Parameters">Parameters</h2>
 
       <p>
          Bij SPI zijn er een aantal parameters mogelijk. Voor elke gangbare combinatie van parameters is er een getal
@@ -228,7 +228,7 @@
       </p>
 
       <hr class="spacer">
-      <h2>Try it out!</h2>
+      <h2 id="TryItOut">Try it out!</h2>
 
       <p>
          In de onderstaande configurator kan je zien welk effect het aanpassen van de SPI modus heeft op het signaal bij
@@ -242,7 +242,7 @@
 
       <hr class="spacer">
 
-      <h2>Uitdagingen</h2>
+      <h2 id="Uitdagingen">Uitdagingen</h2>
       <table class="table table-striped">
          <tbody>
          <tr>

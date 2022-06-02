@@ -30,12 +30,34 @@
 
         <SideBarGroup title="Verbindingen Maken" link="/VerbindingenMaken">
 
-           <SideBarGroup title="Digitale logica" link="/DigitaleLogica"></SideBarGroup>
+           <SideBarGroup title="Digitale logica" link="/DigitaleLogica">
+              <SideBarLink link="/DigitaleLogica#Basis">Basis</SideBarLink>
+              <SideBarLink link="/DigitaleLogica#OutputPin">Output Pin</SideBarLink>
+              <SideBarLink link="/DigitaleLogica#InputPin">Input Pin</SideBarLink>
+              <SideBarLink link="/DigitaleLogica#OpenCollectorPin">Open Collector / Open Drain Pin</SideBarLink>
+
+           </SideBarGroup>
 
            <SideBarGroup title="Seriële Communicatie" link="/SerieleCommunicatie">
-              <SideBarLink link="/SerieleCommunicatie/UART">UART</SideBarLink>
-              <SideBarLink link="/SerieleCommunicatie/SPI">SPI</SideBarLink>
-              <SideBarLink link="/SerieleCommunicatie/I2C">I2C</SideBarLink>
+              <SideBarGroup title="UART" link="/SerieleCommunicatie/UART">
+                 <SideBarLink link="/SerieleCommunicatie/UART#Werking">Werking en parameters</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/UART#TryItOut">Try It Out!</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/UART#Uitdagingen">Uitdagingen</SideBarLink>
+              </SideBarGroup>
+
+              <SideBarGroup title="SPI" link="/SerieleCommunicatie/SPI">
+                 <SideBarLink link="/SerieleCommunicatie/SPI#Werking">Werking</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/SPI#Parameters">Parameters</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/SPI#TryItOut">Try It Out!</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/SPI#Uitdagingen">Uitdagingen</SideBarLink>
+              </SideBarGroup>
+
+              <SideBarGroup title="I2C" link="/SerieleCommunicatie/I2C">
+                 <SideBarLink link="/SerieleCommunicatie/I2C#Adressen">Adressen</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/I2C#Werking">Werking</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/I2C#Visueel">Visueel</SideBarLink>
+                 <SideBarLink link="/SerieleCommunicatie/I2C#Uitdagingen">Uitdagingen</SideBarLink>
+              </SideBarGroup>
            </SideBarGroup>
 
            <SideBarGroup class="fix" title="Analoge logica" link="/AnalogeLogica"></SideBarGroup>
@@ -51,7 +73,7 @@
 
 
         <hr>
-        <h5>Buildomgeving</h5>
+        <h5>Voorbereiding</h5>
         <SideBarGroup title="Installatie" link="/Installatie">
            <SideBarLink link="/Installatie#CubeIDE">STM32CubeIDE</SideBarLink>
            <SideBarLink link="/Installatie#CLion">CLion</SideBarLink>
@@ -59,10 +81,34 @@
            <SideBarLink link="/Installatie#ARM">ARM</SideBarLink>
         </SideBarGroup>
 
-        <SideBarGroup title="Workflow" link="/WorkFlow"></SideBarGroup>
+         <SideBarGroup title="Nieuw project">
+            <SideBarGroup title="STM Project aanmaken" link="/Workflow/STMProject">
+               <SideBarLink link="/Workflow/STMProject#NieuwProject">Nieuw Project</SideBarLink>
+               <SideBarLink link="/Workflow/STMProject#KlokBron">Klokbron</SideBarLink>
+               <SideBarLink link="/Workflow/STMProject#DebugBron">Debugbron</SideBarLink>
+            </SideBarGroup>
+
+            <SideBarGroup title="CLion configureren" link="/Workflow/CLionProject">
+               <SideBarLink link="/Workflow/CLionProject#CLionOpenen">Project openen</SideBarLink>
+               <SideBarLink link="/Workflow/CLionProject#BoardConfig">Board config file</SideBarLink>
+               <SideBarLink link="/Workflow/CLionProject#LinkerScript">Linkerscript aanpassen</SideBarLink>
+               <SideBarLink link="/Workflow/CLionProject#Uitvoeren">Uitvoeren</SideBarLink>
+            </SideBarGroup>
+
+            <SideBarGroup title="Fondant instellen" link="/Workflow/FondantInstellen">
+               <SideBarLink link="/Workflow/FondantInstellen#FondantKopie">Fondant Kopiëren</SideBarLink>
+            </SideBarGroup>
+
+         </SideBarGroup>
 
         <hr>
         <h5>Ontwikkelen</h5>
+        <SideBarGroup title="Hello World" link="/Workflow/HelloWorld ">
+           <SideBarLink link="/Workflow/HelloWorld#PinConfig">Pin configureren</SideBarLink>
+           <SideBarLink link="/Workflow/CLionProject#BoardConfig">Board config file</SideBarLink>
+           <SideBarLink link="/Workflow/CLionProject#LinkerScript">Linkerscript aanpassen</SideBarLink>
+           <SideBarLink link="/Workflow/CLionProject#Uitvoeren">Uitvoeren</SideBarLink>
+        </SideBarGroup>
 
      </template>
 

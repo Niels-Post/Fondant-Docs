@@ -18,6 +18,11 @@ import SPICommunication from "@/components/Content/Pages/SerieleCommunicatie/SPI
 import I2CCommunication from "@/components/Content/Pages/SerieleCommunicatie/I2CCommunication";
 import VerbindingenMaken from "@/components/Content/Pages/VerbindingenMaken";
 import GeavanceerdeFuncties from "@/components/Content/Pages/GeavanceerdeFuncties";
+import STMProject from "@/components/Content/Pages/NieuwProject/STMProject";
+import Vue3HighlightEs from "vue3-highlightjs";
+import 'highlight.js/styles/atelier-lakeside-light.css'
+import CLionProject from "@/components/Content/Pages/NieuwProject/CLionProject";
+import FondantInclude from "@/components/Content/Pages/NieuwProject/FondantInclude";
 
 const routes = [
     {
@@ -80,6 +85,24 @@ const routes = [
         name: "GeavanceerdeFuncties",
         component: GeavanceerdeFuncties
     }
+    ,
+    {
+        path: "/Workflow/STMProject",
+        name: "STM32 Project aanmaken",
+        component: STMProject
+    }
+    ,
+    {
+        path: "/Workflow/CLionProject",
+        name: "CLion configureren",
+        component: CLionProject
+    }
+    ,
+    {
+        path: "/Workflow/FondantInstellen",
+        name: "Fondant instellen",
+        component:  FondantInclude
+    }
 ]
 
 const router = createRouter({
@@ -98,4 +121,5 @@ const router = createRouter({
 
 createApp(App)
     .use(router)
+    .use(Vue3HighlightEs)
     .mount('#app')
