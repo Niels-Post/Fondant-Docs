@@ -23,6 +23,7 @@ import Vue3HighlightEs from "vue3-highlightjs";
 import 'highlight.js/styles/atelier-lakeside-light.css'
 import CLionProject from "@/components/Content/Pages/NieuwProject/CLionProject";
 import FondantInclude from "@/components/Content/Pages/NieuwProject/FondantInclude";
+import HelloWorld from "@/components/Content/Pages/Voorbeelden/1-HelloWorld";
 
 const routes = [
     {
@@ -102,6 +103,12 @@ const routes = [
         path: "/Workflow/FondantInstellen",
         name: "Fondant instellen",
         component:  FondantInclude
+    }
+    ,
+    {
+        path: "/Voorbeelden/HelloWorld",
+        name: "Hello World",
+        component: HelloWorld
     }
 ]
 

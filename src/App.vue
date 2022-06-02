@@ -103,11 +103,8 @@
 
         <hr>
         <h5>Ontwikkelen</h5>
-        <SideBarGroup title="Hello World" link="/Workflow/HelloWorld ">
-           <SideBarLink link="/Workflow/HelloWorld#PinConfig">Pin configureren</SideBarLink>
-           <SideBarLink link="/Workflow/CLionProject#BoardConfig">Board config file</SideBarLink>
-           <SideBarLink link="/Workflow/CLionProject#LinkerScript">Linkerscript aanpassen</SideBarLink>
-           <SideBarLink link="/Workflow/CLionProject#Uitvoeren">Uitvoeren</SideBarLink>
+        <SideBarGroup title="Voorbeelden" link="/Voorbeelden">
+           <SideBarLink link="/Voorbeelden/HelloWorld">Hello World! (blink)</SideBarLink>
         </SideBarGroup>
 
      </template>
