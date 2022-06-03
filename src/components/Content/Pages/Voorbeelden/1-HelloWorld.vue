@@ -14,8 +14,22 @@
       </p>
 
 
+      <p>
+         Voor dit voorbeeld heb je alleen de bluepill en de ST-link programmer nodig. Sluit de bluepill op de ST-link aan met
+         4 jumper wires. Gebruik hiervoor de pins aan het uiteinde van de bluepill met de labels <span class="emph">SWDIO</span>
+         <span class="emph">SWCK</span><span class="emph">GND</span> en <span class="emph">3V3</span>.
+      </p>
+
       <hr class="spacer">
       <h2 id="PinInstellen">Pin instellen</h2>
+
+      <p class="mt-3">
+         Om de pin te kunnen laten knipperen moeten we deze eerst in de IDE instellen. Volg hiervoor de onderstaande
+         stappen.
+         Druk na het wijzigen van de configuratie altijd even op opslaan/ctrl+s. Hierdoor wordt de configuratie
+         toegepast op de
+         code in het project.
+      </p>
 
       <ImageCarousel>
          <CarouselImage :src="require(`@/assets/HelloWorld/12-PinOut.png`)" alt="PinOut" title="">
@@ -26,19 +40,10 @@
          </CarouselImage>
       </ImageCarousel>
 
-      <p class="mt-3">
-         Om de pin te kunnen laten knipperen moeten we deze eerst in de IDE instellen. Volg hiervoor de bovenstaande stappen.
-         Druk na het wijzigen van de configuratie altijd even op opslaan/ctrl+s. Hierdoor wordt de configuratie toegepast op de
-         code in het project.
-      </p>
+
 
       <hr class="spacer">
       <h2 id="DeCode">De Code</h2>
-
-      <p>
-         De code om de LED te laten knipperen is niet ingewikkeld. We maken een pin_out object aan en roepen hier steeds
-         de functie toggle() op aan.
-      </p>
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
@@ -51,9 +56,10 @@
 #include &lt;fd/gpio.hpp&gt;
 
 int fd_main() {
-   // Maak een pin_out aan voor GPIOC
    // LET OP: voordat een pin_out werkt moet deze al ingesteld zijn op de microcontroller als pin_out (dus in de STM32 IDE)
-   fd::gpio::pin_out internal_led(GPIOC, GPIO_PIN_13);
+
+   // Maak een pin_out aan voor GPIOC pin 13
+   fd::stm32_hal::pin_out internal_led(GPIOC, GPIO_PIN_13);
 
    while(true) {
       // Wacht 1 seconde

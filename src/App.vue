@@ -105,6 +105,8 @@
         <h5>Ontwikkelen</h5>
         <SideBarGroup title="Voorbeelden" link="/Voorbeelden">
            <SideBarLink link="/Voorbeelden/HelloWorld">Hello World! (blink)</SideBarLink>
+           <SideBarLink link="/Voorbeelden/PinInPinOut">Pin in + Pin out</SideBarLink>
+           <SideBarLink link="/Voorbeelden/Pinsdoorgeven">Pins doorgeven</SideBarLink>
         </SideBarGroup>
 
      </template>

@@ -24,6 +24,8 @@ import 'highlight.js/styles/atelier-lakeside-light.css'
 import CLionProject from "@/components/Content/Pages/NieuwProject/CLionProject";
 import FondantInclude from "@/components/Content/Pages/NieuwProject/FondantInclude";
 import HelloWorld from "@/components/Content/Pages/Voorbeelden/1-HelloWorld";
+import PinInPinOut from "@/components/Content/Pages/Voorbeelden/2-PinInPinOut";
+import PinsDoorgeven from "@/components/Content/Pages/Voorbeelden/3-PinsDoorgeven";
 
 const routes = [
     {
@@ -107,8 +109,18 @@ const routes = [
     ,
     {
         path: "/Voorbeelden/HelloWorld",
-        name: "Hello World",
+        name: "Voorbeeld: Hello World",
         component: HelloWorld
+    },
+    {
+        path: "/Voorbeelden/PinInPinOut",
+        name: "Voorbeeld: Pin in Pin Out",
+        component: PinInPinOut
+    },
+    {
+        path: "/Voorbeelden/Pinsdoorgeven",
+        name: "Voorbeeld: Pins doorgeven",
+        component: PinsDoorgeven
     }
 ]
 
