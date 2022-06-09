@@ -14,8 +14,12 @@
 
       <ExtImage :src="require('@/assets/HelloWorld/16-InstallFondant.png')"></ExtImage>
       <p>
-         Fondant is een header only library. Mede hierdoor kan je de bestanden gewoon in je project kopiëren om ermee te werken.
-         Kopiëer de hele map "fd" naar de map "Core/inc" in je project. De mappenstructuur zou er zoals bovenstaand uit moeten zien.
+         Om Fondant te installeren hoef je alleen 2 mappen toe te voegen. De map fd waar .hpp bestanden instaan, en de map
+         fd_src, waar de source bestanden in staan. Deze komen direct onder Core/inc (voor de map fd) en Core/src (voor fd_src).
+      </p>
+
+      <p>
+
       </p>
 
 
