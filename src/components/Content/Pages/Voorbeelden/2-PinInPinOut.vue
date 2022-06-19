@@ -108,7 +108,7 @@ import CarouselImage from "@/components/Carousel/CarouselImage";
 import ExtImage from "@/components/Helpers/ExtImage";
 
 export default {
-   name: "FondantInstellen",
+   name: "2PinInPinOut",
    components: {
       CodeFragment,
       ImageCarousel,

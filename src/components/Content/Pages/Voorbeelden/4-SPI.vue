@@ -70,7 +70,7 @@ import titleMixin from "@/components/Helpers/titleMixin";
 import CodeFragment from "@/components/Helpers/CodeFragment";
 
 export default {
-   name: "FondantInstellen",
+   name: "4SPI",
    components: {
       CodeFragment,
    },

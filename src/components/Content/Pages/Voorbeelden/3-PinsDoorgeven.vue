@@ -4,8 +4,9 @@
       <hr>
       <p>
          Je hebt nu pins aan kunnen maken via fd::stm32_hal::pin_*. Om pins mee te kunnen geven aan functies, of aan klassen
-         gebruiken we echter een andere pin_klasse. De reden hiervoor is dat een GPIO pin eigenlijk altijd grotendeels dezelfde
-         functies heeft. Door een basisklasse te gebruiken blijft de code algemeen, en kan deze mogelijk ook op een ander
+         gebruiken we echter een andere pin_klasse; bijvoorbeeld fd::pin_in_base. De reden hiervoor is dat een GPIO pin
+         op verschillende platformen grotendeels dezelfde functie heeft (bijvoorbeeld in- en uitschakelen voor een pin_out).
+         Door een basisklasse te gebruiken blijft de code algemeen, en kan deze mogelijk ook op een ander
          platform gebruikt worden.
       </p>
 
@@ -70,7 +71,7 @@ import titleMixin from "@/components/Helpers/titleMixin";
 import CodeFragment from "@/components/Helpers/CodeFragment";
 
 export default {
-   name: "FondantInstellen",
+   name: "3PinsDoorgeven",
    components: {
       CodeFragment,
    },

@@ -86,7 +86,7 @@ import ImageCarousel from "@/components/Carousel/ImageCarousel";
 import CarouselImage from "@/components/Carousel/CarouselImage";
 
 export default {
-   name: "FondantInstellen",
+   name: "1HelloWorld",
    components: {
       CodeFragment,
       ImageCarousel,
