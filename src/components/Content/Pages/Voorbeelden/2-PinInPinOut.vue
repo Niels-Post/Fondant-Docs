@@ -16,7 +16,8 @@
 
       <p class="mt-3">
          In dit voorbeeld moeten we iets meer met de pin instellen dan alleen de pin modus. Zoals je hebt gelezen in
-         <router-link to="/DigitaleLogica#InputPin">Input Pins</router-link> is het vaak nodig om een pull-up of pull-down
+         <router-link to="/DigitaleLogica#InputPin">Input Pins</router-link>
+         is het vaak nodig om een pull-up of pull-down
          weerstand toe te voegen voordat een input pin goed kan werken. Hieronder zie je de stappen om dit in te stellen
          in STM32 IDE.
       </p>
@@ -43,6 +44,11 @@
 
       <hr class="spacer">
       <h2 id="DeCode">De Code</h2>
+      <p>
+         De onderstaande code "koppelt" pin A15 aan de interne LED. Als je een jumper wire (of knop) van GND naar A15
+         verbindt zal je zien dat de LED aan gaat. Zodra je deze loslaat zal de LED weer uit gaan.
+      </p>
+
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
@@ -79,22 +85,28 @@ int fd_main() {
 
       <p>
          Als je de code uitvoert zal je zien dat de LED uitblijft. Pas als je PA15 verbindt met GND zal deze aangaan.
-         Je zou echter verwachten dat de LED juist standaard aangaat, en uit gaat bij het verbinden met GND. Hoe zit dit?
+         Je zou echter verwachten dat de LED juist standaard aangaat, en uit gaat bij het verbinden met GND. Hoe zit
+         dit?
       </p>
 
       <p>
-         <ExtImage full-width :src="require('@/assets/BluePillPinout.png')" source="https://i.stack.imgur.com/lIPdd.png"></ExtImage>
+         <ExtImage full-width :src="require('@/assets/BluePillPinout.png')"
+                   source="https://i.stack.imgur.com/lIPdd.png"></ExtImage>
       </p>
 
       <p>
-         In de pinout van de bluepill zie je een aantal pins staan met een waarschuwingsicoontje. Hier is <span class="emph">PC13</span> er
-         één van. De reden hiervoor is omdat deze pins een extreem laag maximaal ampèrage kunnen leveren als output. Hierdoor zijn
+         In de pinout van de bluepill zie je een aantal pins staan met een waarschuwingsicoontje. Hier is <span
+            class="emph">PC13</span> er
+         één van. De reden hiervoor is omdat deze pins een extreem laag maximaal ampèrage kunnen leveren als output.
+         Hierdoor zijn
          deze als output eigenlijk alleen als signaalpin te gebruiken, en niet om de LED aan te sturen.
       </p>
 
       <p>
-         Om hier omheen te werken is de LED andersom aangesloten. De pin kan namelijk wel een beperkt ampèrage ontvangen (sinken).
-         De LED is aan de andere kant aangesloten op 3V3. Hierdoor zal de LED dus juist aangaan wanneer PC13 op laag gezet wordt,
+         Om hier omheen te werken is de LED andersom aangesloten. De pin kan namelijk wel een beperkt ampèrage ontvangen
+         (sinken).
+         De LED is aan de andere kant aangesloten op 3V3. Hierdoor zal de LED dus juist aangaan wanneer PC13 op laag
+         gezet wordt,
          want zolang de pin hoog is is er geen verschil tussen de poten van de LED.
       </p>
    </div>

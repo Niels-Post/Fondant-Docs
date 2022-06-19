@@ -26,6 +26,8 @@ import FondantInclude from "@/components/Content/Pages/NieuwProject/FondantInclu
 import HelloWorld from "@/components/Content/Pages/Voorbeelden/1-HelloWorld";
 import PinInPinOut from "@/components/Content/Pages/Voorbeelden/2-PinInPinOut";
 import PinsDoorgeven from "@/components/Content/Pages/Voorbeelden/3-PinsDoorgeven";
+import SPI from "@/components/Content/Pages/Voorbeelden/4-SPI";
+import SPIDMA from "@/components/Content/Pages/Voorbeelden/5-SPI-DMA";
 
 const routes = [
     {
@@ -121,6 +123,16 @@ const routes = [
         path: "/Voorbeelden/Pinsdoorgeven",
         name: "Voorbeeld: Pins doorgeven",
         component: PinsDoorgeven
+    },
+    {
+        path: "/Voorbeelden/SPI",
+        name: "Voorbeeld: SPI",
+        component: SPI
+    },
+    {
+        path: "/Voorbeelden/SPIDMA",
+        name: "Voorbeeld: SPI met DMA",
+        component: SPIDMA
     }
 ]
 

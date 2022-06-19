@@ -25,6 +25,11 @@
       <hr class="spacer">
       <h2 id="DeCode">De Code</h2>
 
+      <p>
+         De onderstaande code "koppelt" pin A15 aan de interne LED. Als je een jumper wire (of knop) van GND naar A15
+         verbindt zal je zien dat de LED aan gaat. Zodra je deze loslaat zal de LED weer uit gaan.
+      </p>
+
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
 #include &lt;fd/fondant_main.hpp&gt;

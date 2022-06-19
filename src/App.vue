@@ -107,6 +107,8 @@
            <SideBarLink link="/Voorbeelden/HelloWorld">Hello World! (blink)</SideBarLink>
            <SideBarLink link="/Voorbeelden/PinInPinOut">Pin in + Pin out</SideBarLink>
            <SideBarLink link="/Voorbeelden/Pinsdoorgeven">Pins doorgeven</SideBarLink>
+           <SideBarLink link="/Voorbeelden/SPI">SPI</SideBarLink>
+           <SideBarLink link="/Voorbeelden/SPIDMA">SPI met DMA</SideBarLink>
         </SideBarGroup>
 
      </template>

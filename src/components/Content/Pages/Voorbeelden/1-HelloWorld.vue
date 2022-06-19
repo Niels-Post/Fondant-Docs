@@ -44,6 +44,9 @@
 
       <hr class="spacer">
       <h2 id="DeCode">De Code</h2>
+      <p>
+         De onderstaande code laat de onboard LED van de bluepill knipperen.
+      </p>
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
