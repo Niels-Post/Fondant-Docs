@@ -135,7 +135,7 @@ import ExtImage from "@/components/Helpers/ExtImage";
 import CodeFragment from "@/components/Helpers/CodeFragment";
 
 export default {
-   name: "CLion Project",
+   name: "CLionProject",
    components: {
       ExtImage,
       CodeFragment

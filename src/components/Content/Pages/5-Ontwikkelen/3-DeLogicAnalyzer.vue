@@ -1,12 +1,10 @@
 <template>
-  <div>
-    Test
-  </div>
+<div>s</div>
 </template>
 
 <script>
 export default {
-  name: "ContentTest"
+   name: "3-DeLogicAnalyzer"
 }
 </script>
 

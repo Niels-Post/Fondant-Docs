@@ -101,7 +101,6 @@
 
       <h4>Pull-Ups / Pull-Downs</h4>
 
-      <h6>Algemeen</h6>
       <div class="col-12 col-xl-8">
          <object :data="require('@/assets/DigitaleLogica/InputKnopGeenWeerstand.svg')" class="img-fluid"></object>
       </div>
@@ -149,7 +148,7 @@
          De waarde van pin 1 is nu standaard hoog. Wanneer we de knop indrukken, wordt de waarde laag.
       </p>
 
-      <h6>Interne pull-ups / Pull-downs</h6>
+      <h4>Interne pull-ups / Pull-downs</h4>
       <p>
          Gelukkig helpen de ontwikkelaars van microcontrollers hiermee. In veel microcontrollers kan je een interne
          pull-up of pull-down weerstand activeren op een input-pin. Hierdoor hoef je niet voor elke knop een aparte externe
@@ -189,29 +188,40 @@
          tegelijk verbinden. De enige optie is om pin 1 van alle microcontrollers te verbinden.
       </p>
 
+      <h4>Een pull-up</h4>
+
+      <div class="col-12 col-xl-8">
+         <object :data="require('@/assets/DigitaleLogica/AlarmSysteemPullups.svg')" class="img-fluid"></object>
+      </div>
+
+      <p>
+         Je ziet dat we in deze schakeling een extra pull-up weerstand hebben toegevoegd. Als microcontroller 1 namelijk
+         zijn pin hoog zet, en microcontrollers 2 en 3 staan nog op laag zal er sprake zijn van kortsluiting. De pull-ups
+         zorgen ervoor dat de pins standaard als hoog worden uitgelezen, zonder dat één van de microcontrollers de pin
+         actief hoog hoeft te zetten.
+      </p>
+
+
+
+      <p>
+         Door de pull-ups zullen alle microcontrollers dan hoog teruggeven. Als er een inbreker word gedetecteerd, wisselt de
+         betreffende microcontroller zijn input pin naar een output-pin, en zet deze op laag. Doordat de pin niet direct,
+         maar via een weerstand op 3.3V is aangesloten ontstaat er geen kortsluiting.
+         De microcontrollers waarvan de pin nog op input staat zullen nu een laag signaal lezen, en weten dat ze hun sirene aan
+         moeten zetten. Als de inbreker is weggejaagd, zet de microcontroller zijn pin weer op input. De meting
+         van de overige microcontrollers zal weer naar hoog gaan, en ze kunnen hun sirene uitzetten.
+      </p>
+
+      <h4>Interne pull-ups</h4>
+
       <div class="col-12 col-xl-8">
          <object :data="require('@/assets/DigitaleLogica/AlarmSysteemConnected.svg')" class="img-fluid"></object>
       </div>
 
       <p>
-         In deze schakeling kunnen we geen normale Output pins gebruiken. Als microcontroller 1 namelijk zijn pin hoog zet,
-         en microcontrollers 2 en 3 staan nog op laag zal er sprake zijn van kortsluiting.
-      </p>
+         Ook hier kunnen we slim gebruik maken van interne pullups. We kunnen op alle microcontrollers een pull-up
+         aanzetten. Dan ontstaat het bovenstaande schema. hier hoeven we geen extra externe pullups meer aan toe te voegen.
 
-      <p>
-         Om dit te voorkomen kunnen we op alle microcontrollers pin 1 instellen als input met een pull-up. Bij het uitlezen
-         van de pin zullen alle microcontrollers dan hoog teruggeven. Als er een inbreker word gedetecteerd, wisselt de
-         betreffende microcontroller zijn input pin naar een output-pin, en zet deze op laag.
-      </p>
-
-      <p>
-         Doordat de andere microcontrollers hun pin via een weerstand op 3.3V hebben aangesloten ontstaat er geen kortsluiting.
-         De microcontrollers waarvan de pin nog op input staat zullen nu laag lezen, en weten dat ze hun sirene aan moeten zetten.
-      </p>
-
-      <p>
-         Als de inbreker is weggejaagd, zet de microcontroller zijn pin weer op input-pullup. De meting van de overige
-         microcontrollers zal weer naar hoog gaan, en ze kunnen hun sirene uitzetten.
       </p>
 
       <p>

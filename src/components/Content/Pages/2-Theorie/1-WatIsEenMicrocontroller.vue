@@ -195,8 +195,8 @@
 import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
-  name: "DeMicrocontroller",
-   title: "De Microcontroller",
+  name: "WatIsEenMicrocontroller",
+   title: "Wat is een Microcontroller",
    mixins: [titleMixin]
 }
 </script>

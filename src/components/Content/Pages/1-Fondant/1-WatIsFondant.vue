@@ -12,8 +12,8 @@
 import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
-  name: "ContentStart",
-   title: "Home",
+  name: "WatIsFondant",
+   title: "Wat is Fondant",
    mixins: [titleMixin]
 }
 </script>

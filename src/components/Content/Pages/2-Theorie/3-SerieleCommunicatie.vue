@@ -90,7 +90,7 @@
 import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
-   name: "SerialCommunication",
+   name: "SerieleCommunicatie",
    title: "Seriële Communicatie",
    mixins: [titleMixin]
 }

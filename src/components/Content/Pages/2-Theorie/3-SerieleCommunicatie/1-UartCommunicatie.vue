@@ -190,12 +190,12 @@ import DefRef from "@/components/Helpers/DefRef";
 import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
-   name: "UartCommunication",
+   name: "UartCommunicatie",
+   title: "Uart communicatie",
    components: {
       WaveDromUART,
       DefRef
    },
-   title: "UART",
    mixins: [titleMixin]
 }
 </script>

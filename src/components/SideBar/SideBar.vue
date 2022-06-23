@@ -1,6 +1,6 @@
 <template>
    <div class="d-flex">
-      <div ref="sidebar" class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
+      <div ref="sidebar" class="sidebar d-flex flex-column flex-shrink-0 pb-5  p-3 text-white bg-dark"
            :class="{'side-navbar-opened': isOpen}">
 
 
@@ -108,7 +108,6 @@ main {
    max-width: 100vh;
    overflow: hidden;
    overflow-y: auto;
-   padding-bottom: 100px;
 }
 
 .content-container {

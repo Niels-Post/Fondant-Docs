@@ -24,7 +24,7 @@
 
 
       <hr class="spacer">
-      <h2 id="Main">Omleiden van Main</h2>
+      <h2 id="Main">Omleiden van Main.c</h2>
       <p>
          STM32IDE heeft een main.c bestand aangemaakt. In deze main worden allerlei
          instellingen aangepast om te zorgen dat de chip op de juiste manier werkt, maar hierdoor is het een erg groot bestand.
@@ -37,8 +37,6 @@
          van in een C++ context.
       </p>
 
-      <h3>Aanpassingen in Main.c</h3>
-
 
       <p>
          Om deze complicaties te voorkomen kan Fondant de main-aanroep omleiden naar een apart .cpp bestand. Hiervoor moet je wel
@@ -46,7 +44,7 @@
       </p>
 
       <p>
-         Voeg een include toe aan de private includes van main.c:
+         Voeg een include toe aan de private includes van <span class="emph">Core/src/main.c</span>:
       </p>
 
       <CodeFragment type="cpp"><pre>
@@ -73,11 +71,16 @@ fd_main_caller();
          volgende configuratie-update van de chip.</div>
 
 
-      <h3>Aanpassingen in Main.cpp</h3>
+      <hr class="spacer">
+      <h2 id="MainCPP">Main.cpp</h2>
 
       <p>
          De laatste stap is om main.cpp te maken. Dit zal het entrypoint van je toepassing maken, en vanaf hier kan je zoals
          je gewend bent in C++ ook weer andere bestanden includen en gebruiken.
+      </p>
+
+      <p>
+         Maak een nieuw bestand aan: <span class="emph">Core/src/main.cpp</span> en zet hier het volgende in.
       </p>
 
       <CodeFragment type="cpp"><pre>
@@ -118,12 +121,12 @@ import ExtImage from "@/components/Helpers/ExtImage";
 import CodeFragment from "@/components/Helpers/CodeFragment";
 
 export default {
-   name: "FondantInstellen",
+   name: "FondantToevoegen",
    components: {
       ExtImage,
       CodeFragment
    },
-   title: "Fondant Instellen",
+   title: "Fondant toevoegen",
    mixins: [titleMixin]
 }
 </script>
