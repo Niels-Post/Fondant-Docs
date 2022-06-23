@@ -46,9 +46,9 @@
       <h2 id="DeCode">De Code</h2>
 
       <p>
-         Het enige verschil met de niet-DMA code voor SPI is dat je de dma-vlag op true zet. Als je de onderstaande code
-         uitvoert, en het resultaat bekijkt in Pulseview kan je deze vlag op false zetten om te zien wat het verschil
-         is in snelheid bij het gebruik van DMA.
+         Als DMA is ingesteld in de IDE, dan is het enige verschil met de niet-DMA code voor SPI dat je de dma-vlag op true zet.
+         Als je de onderstaande code uitvoert, en het resultaat bekijkt in Pulseview kan je deze vlag op false zetten om
+         te zien wat het verschil is in snelheid bij het gebruik van DMA.
       </p>
 
       <CodeFragment type="cpp"><pre>

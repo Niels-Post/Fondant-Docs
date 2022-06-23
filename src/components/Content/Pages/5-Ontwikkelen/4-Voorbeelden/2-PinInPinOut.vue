@@ -16,7 +16,7 @@
 
       <p class="mt-3">
          In dit voorbeeld moeten we iets meer met de pin instellen dan alleen de pin modus. Zoals je hebt gelezen in
-         <router-link to="/DigitaleLogica#InputPin">Input Pins</router-link>
+         <router-link to="/Theorie/DigitaleLogica#InputPin">Input Pins</router-link>
          is het vaak nodig om een pull-up of pull-down
          weerstand toe te voegen voordat een input pin goed kan werken. Hieronder zie je de stappen om dit in te stellen
          in STM32 IDE.

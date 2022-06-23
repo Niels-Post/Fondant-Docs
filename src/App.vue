@@ -4,6 +4,10 @@
       <template v-slot:sidebar>
          <h5>Fondant</h5>
          <SideBarGroup title="Introductie" link="/Fondant/WatIsFondant">
+            <SideBarLink link="/Fondant/WatIsFondant#DeDocumentatie">De Documentatie</SideBarLink>
+            <SideBarLink link="/Fondant/WatIsFondant#DeLibrary">De Library</SideBarLink>
+            <SideBarLink link="/Fondant/WatIsFondant#DeNaam">De Naam</SideBarLink>
+
          </SideBarGroup>
 
          <hr>
@@ -63,34 +67,32 @@
             <SideBarLink link="/Voorbereiding/VereistenInstalleren#CubeIDE">STM32CubeIDE</SideBarLink>
             <SideBarLink link="/Voorbereiding/VereistenInstalleren#CLion">CLion</SideBarLink>
             <SideBarLink link="/Voorbereiding/VereistenInstalleren#OpenOCD">OpenOCD</SideBarLink>
-            <SideBarLink link="/Voorbereiding/VereistenInstalleren#ARM">ARM</SideBarLink>
+            <SideBarLink link="/Voorbereiding/VereistenInstalleren#ARM">ARM toolchain</SideBarLink>
+            <SideBarLink link="/Voorbereiding/VereistenInstalleren#PulseView">PulseView</SideBarLink>
          </SideBarGroup>
 
-         <SideBarGroup title="Nieuw project (handmatig)" link="/Voorbereiding/NieuwProjectHandmatig">
-            <SideBarGroup title="STM Project aanmaken" link="/Voorbereiding/NieuwProjectHandmatig/STMProject">
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/STMProject#NieuwProject">Nieuw Project</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/STMProject#KlokBron">Klokbron</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/STMProject#DebugBron">Debugbron</SideBarLink>
+         <SideBarGroup title="Nieuw project" link="/Voorbereiding/NieuwProject">
+            <SideBarGroup title="STM Project aanmaken" link="/Voorbereiding/NieuwProject/STMProject">
+               <SideBarLink link="/Voorbereiding/NieuwProject/STMProject#NieuwProject">Nieuw Project</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/STMProject#KlokBron">Klokbron</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/STMProject#DebugBron">Debugbron</SideBarLink>
             </SideBarGroup>
 
-            <SideBarGroup title="CLion configureren" link="/Voorbereiding/NieuwProjectHandmatig/CLionProject">
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/CLionProject#CLionOpenen">Project openen</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/CLionProject#BoardConfig">Board config file</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/CLionProject#LinkerScript">Linkerscript aanpassen</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/CLionProject#Uitvoeren">Uitvoeren</SideBarLink>
+            <SideBarGroup title="CLion configureren" link="/Voorbereiding/NieuwProject/CLionProject">
+               <SideBarLink link="/Voorbereiding/NieuwProject/CLionProject#CLionOpenen">Project openen</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/CLionProject#BoardConfig">Board config file</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/CLionProject#LinkerScript">Linkerscript aanpassen</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/CLionProject#Uitvoeren">Uitvoeren</SideBarLink>
             </SideBarGroup>
 
-            <SideBarGroup title="Fondant toevoegen" link="/Voorbereiding/NieuwProjectHandmatig/FondantToevoegen">
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/FondantToevoegen#FondantKopie">Fondant Kopiëren</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/FondantToevoegen#Main">Main.c omleiden</SideBarLink>
-               <SideBarLink link="/Voorbereiding/NieuwProjectHandmatig/FondantToevoegen#MainCPP">Main.cpp maken</SideBarLink>
+            <SideBarGroup title="Fondant toevoegen" link="/Voorbereiding/NieuwProject/FondantToevoegen">
+               <SideBarLink link="/Voorbereiding/NieuwProject/FondantToevoegen#FondantKopie">Fondant Kopiëren</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/FondantToevoegen#Main">Main.c omleiden</SideBarLink>
+               <SideBarLink link="/Voorbereiding/NieuwProject/FondantToevoegen#MainCPP">Main.cpp maken</SideBarLink>
             </SideBarGroup>
 
          </SideBarGroup>
 
-         <SideBarGroup title="Nieuw project (template)" link="/Voorbereiding/NieuwProjectTemplate">
-
-         </SideBarGroup>
 
          <hr>
          <h5>Ontwikkelen</h5>
@@ -110,6 +112,7 @@
             <SideBarLink link="/Ontwikkelen/Voorbeelden/Pinsdoorgeven">Pins doorgeven</SideBarLink>
             <SideBarLink link="/Ontwikkelen/Voorbeelden/SPI">SPI</SideBarLink>
             <SideBarLink link="/Ontwikkelen/Voorbeelden/SPIDMA">SPI met DMA</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/Interrupts">Interrupts</SideBarLink>
          </SideBarGroup>
 
          <hr>

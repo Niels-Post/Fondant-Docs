@@ -19,12 +19,11 @@ import GeavanceerdeFuncties from "@/components/Content/Pages/2-Theorie/4-Geavanc
 
 
 import VereistenInstalleren from "@/components/Content/Pages/3-Voorbereiding/1-VereistenInstalleren";
-import NieuwProjectHandmatig from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProjectHandmatig";
-import NieuwProjectTemplate from "@/components/Content/Pages/3-Voorbereiding/3-NieuwProjectTemplate";
+import NieuwProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProject";
 
-import STMProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProjectHandmatig/1-STMProject";
-import CLionProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProjectHandmatig/2-CLionProject";
-import FondantToevoegen from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProjectHandmatig/3-FondantToevoegen";
+import STMProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProject/1-STMProject";
+import CLionProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProject/2-CLionProject";
+import FondantToevoegen from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProject/3-FondantToevoegen";
 
 import OntwikkelenMetFondant from "@/components/Content/Pages/5-Ontwikkelen/1-OntwikkelenMetFondant.vue"
 import DeDebugger from "@/components/Content/Pages/5-Ontwikkelen/2-DeDebugger.vue"
@@ -35,6 +34,7 @@ import PinInPinOut from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/
 import PinsDoorgeven from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/3-PinsDoorgeven";
 import SPI from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/4-SPI";
 import SPIDMA from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/5-SPI-DMA";
+import Interrupts from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/6-Interrupts";
 
 import InformatieVinden from "@/components/Content/Pages/6-Overig/1-InformatieVinden";
 
@@ -99,29 +99,24 @@ const routes = [
         component: VereistenInstalleren
     },
     {
-        path: "/Voorbereiding/NieuwProjectHandmatig",
-        name: "NieuwProjectHandmatig",
-        component: NieuwProjectHandmatig
+        path: "/Voorbereiding/NieuwProject",
+        name: "NieuwProject",
+        component: NieuwProject
     },
     {
-        path: "/Voorbereiding/NieuwProjectHandmatig/STMProject",
+        path: "/Voorbereiding/NieuwProject/STMProject",
         name: "STMProject",
         component: STMProject
     },
     {
-        path: "/Voorbereiding/NieuwProjectHandmatig/CLionProject",
+        path: "/Voorbereiding/NieuwProject/CLionProject",
         name: "CLionProject",
         component: CLionProject
     },
     {
-        path: "/Voorbereiding/NieuwProjectHandmatig/FondantToevoegen",
+        path: "/Voorbereiding/NieuwProject/FondantToevoegen",
         name: "FondantToevoegen",
         component: FondantToevoegen
-    },
-    {
-        path: "/Voorbereiding/NieuwProjectTemplate",
-        name: "NieuwProjectTemplate",
-        component: NieuwProjectTemplate
     },
 
     // Ontwikkeling
@@ -169,6 +164,11 @@ const routes = [
         path: "/Ontwikkelen/Voorbeelden/SPIDMA",
         name: "SPIDMA",
         component: SPIDMA
+    },
+    {
+        path: "/Ontwikkelen/Voorbeelden/Interrupts",
+        name: "Interrupts",
+        component: Interrupts
     },
 
     // Overig

@@ -213,6 +213,58 @@
 
     </div>
 
+     <hr class="spacer">
+     <!-- PulseView -->
+     <div>
+        <h2 id="PulseView">PulseView
+           <ExtLink
+                 to="https://sigrok.org/wiki/PulseView"
+                 small remove-path/>
+        </h2>
+
+        <img width="200" class="float-end" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Sigrok_logo.svg" alt="Sigrok Logo">
+
+
+        <p>
+           Met PulseView is het mogelijk om digitale signalen te analyseren via een logic analyser, zoals deze
+           saeleae compatible analyzer: <ExtLink remove-path to="https://www.tinytronics.nl/shop/nl/gereedschap-en-montage/meten/oscilloscopen-en-logic-analyzers/logic-analyzer-8-kanaals-usb"/>
+        </p>
+
+         <p>
+            Het voordeel van PulseView is dat naast alleen het bekijken van elektrische signalen ook "decoders" ingesteld
+            kunnen worden. Hiermee is het ook mogelijk om te zien hoe data geïnterpreteerd word. Je kan bijvoorbeeld
+            de byte-data inzien van een SPI-transmissie. Van sommige specifieke chips kan je zelfs de betekenis van
+            specifieke bytes zien.
+         </p>
+
+
+
+        <h3>Installatie</h3>
+        <ExtLink
+              to="https://sigrok.org/wiki/Downloads"/>
+
+
+        <ImageCarousel>
+           <CarouselImage :src="require(`@/assets/Installatie/PulseView/1.png`)" alt="Start ARM Setup" title="">
+              Mogelijk geeft Windows deze melding. Druk op meer weergeven en toch uitvoeren
+           </CarouselImage>
+           <CarouselImage :src="require(`@/assets/Installatie/PulseView/2.png`)" alt="ARM License Agreement" title="">
+
+           </CarouselImage>
+           <CarouselImage :src="require(`@/assets/Installatie/PulseView/3.png`)" alt="ARM Install location" title="">
+              Licentieovereenkomst
+           </CarouselImage>
+           <CarouselImage :src="require(`@/assets/Installatie/PulseView/4.png`)" alt="ALT" title="">
+              Example Data is niet nodig
+           </CarouselImage>
+           <CarouselImage :src="require(`@/assets/Installatie/PulseView/5.png`)" alt="ALT" title="">
+           </CarouselImage>
+           <CarouselImage :src="require(`@/assets/Installatie/PulseView/6.png`)" alt="ALT" title="">Einde setup.
+              Het registreren van .sr is niet per sé nodig
+           </CarouselImage>
+        </ImageCarousel>
+
+     </div>
 
   </div>
 </template>
